@@ -284,40 +284,34 @@ button:hover, button:focus,
 
 @keyframes cloud-move {
   from {
-    transform: translate(0, 50px);
+    transform: translate(100px, 10px);
   }
   to {
-    transform: translate(200px, 50px);
+    transform: translate(0px, 10px);
   }
 }
 
 .cloud-front {
-  animation: 30s cloud-move infinite alternate linear;
+  animation: 20s cloud-move infinite alternate linear;
 }
 
 @keyframes cloud-move-reverse {
   from {
-    transform: translate(446px, 48px);
+    transform: translate(-30px, 10px);
   }
   to {
-    transform: translate(100px, 48px);
+    transform: translate(89px, 10px);
   }
 }
 
 .cloud-back {
-  animation: 20s cloud-move-reverse infinite alternate linear;
+  animation: 10s cloud-move-reverse infinite alternate linear;
 }
 
-.hometown-image {
-  clear: both;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.berlin-picture {
+.hometown-picture {
   width: 80%;
   height: auto;
+  text-align: center;
 }
 
 /* Media Queries all go at the end of CSS as the last rule in CSS is the winner. If you have a new rule following media query, it will not be used. */
