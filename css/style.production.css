@@ -19,12 +19,12 @@ Header Font Weight: 700;
 
 /* CSS variables */
 
-
 /* This forces Box model into including padding and border in element size calculations if an element has been given a specific size. */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 /* meaning if you wanted an element of 124px with a padding of 20px and a border of 4px would actually turn into 100px making it more uniform. */
 
 /* BODY */
@@ -37,8 +37,9 @@ body {
 }
 
 p {
-  font-size: 16px
+  font-size: 16px;
 }
+
 /* HEADERS */
 h1 {
   font-size: 30px;
@@ -54,6 +55,7 @@ h3 {
   font-size: 18px;
   font-weight: 700;
 }
+
 /* LINKS */
 a {
   color: #357b70;
@@ -67,7 +69,8 @@ a:visited {
 }
 
 /* a:hover shows an effect when the mouse is hovering over a link or a button. a:focus does the same thing while the user navigates the web page with the keyboard */
-a:hover, a:focus {
+a:hover,
+a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
   opacity: 0.5;
@@ -85,58 +88,20 @@ a:active {
 button {
   /* overwrites browser defaults and resets the border */
   border: none;
+
   /* takes the font from the outer container */
   display: inline-block;
   font-family: inherit;
+
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
   background-color: #357b70;
   color: #f8f8ff;
   text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity; /* The longer format would be:
-  transition-duration: 0.2s;
-  transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
-}
-.button {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  /* takes the font from the outer container */
-  display: inline-block;
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #357b70;
-  color: #f8f8ff;
-  text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
-  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.2s opacity;
-  -o-transition: 0.2s opacity;
-  transition: 0.2s opacity; /* The longer format would be:
-  transition-duration: 0.2s;
-  transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
-}
-.button_secondary {
-  /* overwrites browser defaults and resets the border */
-  border: none;
-  /* takes the font from the outer container */
-  display: inline-block;
-  font-family: inherit;
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #357b70;
-  color: #f8f8ff;
-  text-decoration: none;
-  /*adds spacing to the button (this will be discussed more in-depth later) */
-  padding: 10px;
-  border-radius: 3px;
+
   /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
@@ -146,10 +111,65 @@ button {
   transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
 }
 
-button:hover, button:focus,
-.button:hover, .button:focus {
+.button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+
+  /* takes the font from the outer container */
+  display: inline-block;
+  font-family: inherit;
+
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;
+  color: #f8f8ff;
+  text-decoration: none;
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity; /* The longer format would be:
+  transition-duration: 0.2s;
+  transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
+}
+
+.button_secondary {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+
+  /* takes the font from the outer container */
+  display: inline-block;
+  font-family: inherit;
+
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;
+  color: #f8f8ff;
+  text-decoration: none;
+
+  /* adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity; /* The longer format would be:
+  transition-duration: 0.2s;
+  transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
   /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
+
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
@@ -159,7 +179,10 @@ button:hover, button:focus,
   color: #222;
 }
 
-/* Required fields */   /* When reffering to a (class) to change it's characteristics in CSS you must add the (.) in order to pull up the specific (class). */
+/* Required fields */
+
+/* When reffering to a (class) to change it's characteristics in CSS you must add the (.) in order to pull up the specific (class). */
+
 .required-field {
   font-family: inherit;
   font-size: 26px;
@@ -179,27 +202,30 @@ button:hover, button:focus,
 @-webkit-keyframes rotate-picture {
   0% {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0)
+    transform: rotateY(0);
   }
+
   100% {
     -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg)
+    transform: rotateY(360deg);
   }
 }
+
 @keyframes rotate-picture {
   0% {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0)
+    transform: rotateY(0);
   }
+
   100% {
     -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg)
+    transform: rotateY(360deg);
   }
 }
 
 .rotate-picture {
   -webkit-animation: 0.5s rotate-picture 1 linear;
-          animation: 0.5s rotate-picture 1 linear;
+  animation: 0.5s rotate-picture 1 linear;
 }
 
 .profile__portrait {
@@ -224,11 +250,10 @@ button:hover, button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
-
 
 /* PAGE-HEADER      The following is flex-box layout */
 .page-header {
@@ -241,14 +266,14 @@ button:hover, button:focus,
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;   /* Gives all items base width of 200px and allows to shrink within same ratio. (growth will be added to nav only) */
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;   /* Gives all items base width of 200px and allows to shrink within same ratio. (growth will be added to nav only) */
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
 
@@ -260,13 +285,14 @@ button:hover, button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
 .about-list {
-  list-style-type: none; padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 .contact_menu {
@@ -276,8 +302,8 @@ button:hover, button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: left;
   padding: 20px;
 }
@@ -290,25 +316,27 @@ button:hover, button:focus,
 .navigation-list li {
   display: inline-block;
   margin-left: 15px;
-
 }
 
 .navigation-list__item--active {
   text-decoration: none;
 }
 
-/* Grid fallback*/
+/* Grid fallback */
 .grid__item {
   display: inline-block;
   width: 33%;
 }
 
-/* Styling CSS Grid */  /* The following is an example of a Grid layout. */
+/* Styling CSS Grid */
+
+/* The following is an example of a Grid layout. */
 .grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
   grid-template-columns: 1fr 1fr 1fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
+
   /* grid-template-row: default is auto so you don't even need to add it, grid will add for you. */
   grid-gap: 20px; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
 }
@@ -325,36 +353,41 @@ button:hover, button:focus,
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
   grid-row: 1/3;
+
   /* Longer way to code this:
   .grid__item:last-child {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-  */
+  grid-column-start: 3;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
-
+*/
+}
 
 /* Here we have Animation @keyframe rules */
 @-webkit-keyframes color-change {    /* color-change is the name of the animation which is used to target a specific element. */
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;       /* This animation is being used to effect the sun on the about page. the (class) [].sun] has already been added to the SVG image in the example. */
   }
+
   100% {
     fill: #f76414;
   }
 }
+
 @keyframes color-change {    /* color-change is the name of the animation which is used to target a specific element. */
   0% {
     fill: #edc655;
   }
+
   50% {
     fill: #fcffad;       /* This animation is being used to effect the sun on the about page. the (class) [].sun] has already been added to the SVG image in the example. */
   }
+
   100% {
     fill: #f76414;
   }
@@ -362,70 +395,75 @@ button:hover, button:focus,
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
+
 /* Longer format for the .sun animation:
 .sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
+animation-duration: 4s;
+animation-name: color-change;
+animation-iteration-count: infinite;
+animation-direction: alternate;
+animation-timing-function: linear;
 }
 */
 
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(100px, 10px);
-            transform: translate(100px, 10px);
+    transform: translate(100px, 10px);
   }
+
   to {
-    -webkit-transform: translate(0px, 10px);
-            transform: translate(0px, 10px);
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(100px, 10px);
-            transform: translate(100px, 10px);
+    transform: translate(100px, 10px);
   }
+
   to {
-    -webkit-transform: translate(0px, 10px);
-            transform: translate(0px, 10px);
+    -webkit-transform: translate(0, 10px);
+    transform: translate(0, 10px);
   }
 }
 
 .cloud-front {
   -webkit-animation: 20s cloud-move infinite alternate linear;
-          animation: 20s cloud-move infinite alternate linear;
+  animation: 20s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(-30px, 10px);
-            transform: translate(-30px, 10px);
+    transform: translate(-30px, 10px);
   }
+
   to {
     -webkit-transform: translate(89px, 10px);
-            transform: translate(89px, 10px);
+    transform: translate(89px, 10px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(-30px, 10px);
-            transform: translate(-30px, 10px);
+    transform: translate(-30px, 10px);
   }
+
   to {
     -webkit-transform: translate(89px, 10px);
-            transform: translate(89px, 10px);
+    transform: translate(89px, 10px);
   }
 }
 
 .cloud-back {
   -webkit-animation: 10s cloud-move-reverse infinite alternate linear;
-          animation: 10s cloud-move-reverse infinite alternate linear;
+  animation: 10s cloud-move-reverse infinite alternate linear;
 }
 
 .hometown-picture {
@@ -441,20 +479,24 @@ button:hover, button:focus,
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
@@ -463,35 +505,35 @@ button:hover, button:focus,
 /* This is the long version of the above code full of redundant code:::
 
 @media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
-  }
+.grid {
+grid-template-columns: 1fr;
+grid-gap: 10px;
+}
+.grid__item:last-child {
+grid-column: auto / auto;
+grid-row: auto / auto;
+}
+h1 {
+font-size: 22px;
+}
 }
 @media all and (min-width: 500px) and (max-width: 750px){
-  .grid {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 10px;
-  }
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
-  }
-  h1 {
-    font-size: 22px;
-  }
+.grid {
+grid-template-columns: 1fr 1fr;
+grid-gap: 10px;
+}
+.grid__item:last-child {
+grid-column: auto / auto;
+grid-row: auto / auto;
+}
+h1 {
+font-size: 22px;
+}
 }
 
 */
 @media all and (max-width: 500px) {
   .page-header {
-    padding: 0px;
+    padding: 0;
   }
 }
