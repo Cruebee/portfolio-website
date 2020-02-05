@@ -534,6 +534,6 @@ font-size: 22px;
 */
 @media all and (max-width: 500px) {
   .page-header {
-    padding: 0;
+    padding-right: 10px;
   }
 }

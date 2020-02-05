@@ -202,6 +202,7 @@ button:focus,
 
 .page-header__item {
   flex: 0 1 200px;   /* Gives all items base width of 200px and allows to shrink within same ratio. (growth will be added to nav only) */
+  padding: 10px;
 }
 
 .page-header__item:last-child {
