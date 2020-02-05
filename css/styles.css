@@ -1,16 +1,18 @@
 /*
 Colors Used
-Grid Item Background (Light Gray): #ddd;
-Text Color (Dark Gray): #222; or #2b2b2b;
-Primary Link Color: #357b70;
+Primary Color: #357b70;
+Primary Background: #fffafa;
+Primary Font Color: #222;
+Primary Font Size: 18px;
+Primary Button Text Color: #f8f8ff;
 Secondary Color: #e0b354;
-Unvisited Link: #357b70;
-Visited Link:#05676e;
-Contrast Compliant Background Color: #fffafa;
-Extra Color (Orange): #e67e22;
-Button Primary Text Color: #f8f8ff;
-Secondary Button Color: #e0b354;
+Secondary Font Size: 16px;
+Visited Link: #05676e;
+Active Link: #489c79;
+Dark Grey: #2b2b2b;
 Error Color: #8b0000;
+Grid Background Color: #ddd;
+Header Font Weight: 700;
 */
 
 /* CSS variables */
@@ -20,7 +22,6 @@ Error Color: #8b0000;
   --primary-font-color: #222;
   --primary-font-size: 18px;
   --button-text-primary: #f8f8ff;
-  --secondary-button-color: #e0b354;
   --secondary-color: #e0b354;
   --secondary-font-size: 16px;
   --visited-link: #05676e;
@@ -92,7 +93,8 @@ a:active {
 
 /* BUTTONS */
 button,
-.button {
+.button,
+.button_secondary {
   /* overwrites browser defaults and resets the border */
   border: none;
   /* takes the font from the outer container */
@@ -121,9 +123,8 @@ button:hover, button:focus,
 }
 
 .button_secondary {
-  background-color: var(--secondary-button-color);
+  background-color: var(--secondary-color);
   color: var(--primary-font-color);
-  font-size: inherit;
 }
 
 /* Required fields */   /* When reffering to a (class) to change it's characteristics in CSS you must add the (.) in order to pull up the specific (class). */

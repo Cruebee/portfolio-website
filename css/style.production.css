@@ -2,17 +2,19 @@
 
 /*
 Colors Used
-Grid Item Background (Light Gray): #ddd;
-Text Color (Dark Gray): #222; or #2b2b2b;
-Primary Link Color: #357b70;
+Primary Color: #357b70;
+Primary Background: #fffafa;
+Primary Font Color: #222;
+Primary Font Size: 18px;
+Primary Button Text Color: #f8f8ff;
 Secondary Color: #e0b354;
-Unvisited Link: #357b70;
-Visited Link:#05676e;
-Contrast Compliant Background Color: #fffafa;
-Extra Color (Orange): #e67e22;
-Button Primary Text Color: #f8f8ff;
-Secondary Button Color: #e0b354;
+Secondary Font Size: 16px;
+Visited Link: #05676e;
+Active Link: #489c79;
+Dark Grey: #2b2b2b;
 Error Color: #8b0000;
+Grid Background Color: #ddd;
+Header Font Weight: 700;
 */
 
 /* CSS variables */
@@ -122,6 +124,27 @@ button {
   transition-duration: 0.2s;
   transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
 }
+.button_secondary {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  /* takes the font from the outer container */
+  display: inline-block;
+  font-family: inherit;
+  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  background-color: #357b70;
+  color: #f8f8ff;
+  text-decoration: none;
+  /*adds spacing to the button (this will be discussed more in-depth later) */
+  padding: 10px;
+  border-radius: 3px;
+  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+  -webkit-transition: 0.2s opacity;
+  -o-transition: 0.2s opacity;
+  transition: 0.2s opacity; /* The longer format would be:
+  transition-duration: 0.2s;
+  transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
+}
 
 button:hover, button:focus,
 .button:hover, .button:focus {
@@ -134,7 +157,6 @@ button:hover, button:focus,
 .button_secondary {
   background-color: #e0b354;
   color: #222;
-  font-size: inherit;
 }
 
 /* Required fields */   /* When reffering to a (class) to change it's characteristics in CSS you must add the (.) in order to pull up the specific (class). */
