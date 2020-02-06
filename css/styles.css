@@ -223,12 +223,29 @@ button:focus,
   padding: 0;
 }
 
-.contact_menu {
-  clear: both;
+.contact_form {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  padding: 10px;
+}
+
+.contact-info {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  padding: 20px;
+  padding: 10px;
+}
+
+.contact-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.contact-all {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 /* NAVIGATION */
