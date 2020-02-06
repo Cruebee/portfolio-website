@@ -37,42 +37,45 @@
 
   </header>
 
-<div class="contact_menu">
-    <form action="#" method="post" id="contact-form"> <!-- A <form>'s default (method) is to post. a common action might look like: <form action="/login-form-action" method="post"></form> -->
-    <h1>Contact Me</h1>
+  <div class="contact-all">
+    <div class="contact_form">
+      <form action="#" method="post" id="contact-form"> <!-- A <form>'s default (method) is to post. a common action might look like: <form action="/login-form-action" method="post"></form> -->
+      <h1>Contact Me</h1>
 
-    <label class="standard-label" for="contact-email"><span class="required-field">*</span>E-mail: </label>
-    <input type="email" id="contact-email" required placeholder="example@email.com"><br><!-- Note you can also use: type="text" which would be a plain text field. Some browsers and mobile devices may react differenty to more semantic type="" situations such as type="email" or type="tel" -->
-    <br>
+      <label class="standard-label" for="contact-email"><span class="required-field">*</span>E-mail: </label>
+      <input type="email" id="contact-email" required placeholder="example@email.com"><br><!-- Note you can also use: type="text" which would be a plain text field. Some browsers and mobile devices may react differenty to more semantic type="" situations such as type="email" or type="tel" -->
+      <br>
 
-    <label class="standard-label" for="contact-telephone">Telephone: </label>
-    <input type="tel" id="contact-telephone" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" placeholder="1-555-555-5555"><br>
+      <label class="standard-label" for="contact-telephone">Telephone: </label>
+      <input type="tel" id="contact-telephone" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" placeholder="1-555-555-5555"><br>
 
-    <br>
+      <br>
 
-    <label class="standard-label" for="contact-message"><span class="required-field">*</span>Message:</label>
-    <textarea maxlength="240" id="contact-message" required placeholder="Send Crue a message."></textarea><br>
-    <span class="max-length">Max 240 Characters</span><br>
+      <label class="standard-label" for="contact-message"><span class="required-field">*</span>Message:</label>
+      <textarea maxlength="240" id="contact-message" required placeholder="Send Crue a message."></textarea><br>
+      <span class="max-length">Max 240 Characters</span><br>
 
-    <br>
+      <br>
 
-    <button type="submit" value="Send message">Send Message</button>
-  </form>
+      <button type="submit" value="Send message">Send Message</button>
 
-  <div>
-    <h1>Contact Info</h1>
-    Crue Jameson<br>
-    2215 N. Overland Trl.<br>
-    80521<br>
-    USA<br>
-    <br>
-    Tel:<a href="tel:+1-970-980-8519">Crue's Phone Number</a><br>
-    Skype:<a href="skype:cruebeedoobie">Crue's Skype</a><br>
-    e-mail:<a href="mailto:cruebeejameson@gmail.com">Crue's Contact Email</a>
+    </form>
+
+    <div class="contact-info">
+      <h1>Contact Info</h1>
+      Crue Jameson<br>
+      2215 N. Overland Trl.<br>
+      80521<br>
+      USA<br>
+      <br>
+      Tel:<a href="tel:+1-970-980-8519">Crue's Phone Number</a><br>
+      Skype:<a href="skype:cruebeedoobie">Crue's Skype</a><br>
+      e-mail:<a href="mailto:cruebeejameson@gmail.com">Crue's Contact Email</a>
+    </div>
   </div>
 
-  <div>
-    <a href="https://www.instagram.com/cruebeedoobie/" class="button" download>Pictures by Crue</a>
+  <div class="contact-buttons">
+    <a href="https://www.instagram.com/cruebeedoobie/" class="button" download>Check out my Instagram</a>
     <a href="#" class="button_secondary">My Partner's Projects</a>
   </div>
 </div>
