@@ -4,15 +4,20 @@ Primary Color: #357b70;
 Primary Background: #fffafa;
 Primary Font Color: #222;
 Primary Font Size: 18px;
-Primary Button Text Color: #f8f8ff;
+New Primary Button Text: #000;
+Old Primary Button Text Color: #f8f8ff;
+New Secondary Color: #ccc;
 Secondary Color: #e0b354;
 Secondary Font Size: 16px;
-Visited Link: #05676e;
+New Visited Link: #065535;
+Old Visited Link: #05676e;
 Active Link: #489c79;
 Dark Grey: #2b2b2b;
 Error Color: #8b0000;
 Grid Background Color: #ddd;
 Header Font Weight: 700;
+Button Background: #cbbeb5;
+Other Grey: #696969;
 */
 
 /* CSS variables */
@@ -21,15 +26,16 @@ Header Font Weight: 700;
   --primary-background: #fffafa;
   --primary-font-color: #222;
   --primary-font-size: 18px;
-  --button-text-primary: #f8f8ff;
-  --secondary-color: #e0b354;
+  --button-text-primary: #000;
+  --secondary-color: #ccc;
   --secondary-font-size: 16px;
-  --visited-link: #05676e;
+  --visited-link: #065535;
   --active-link: #489c79;
   --dark-grey: #2b2b2b;
   --error-color: #8b0000;
   --grid-background-color: #ddd;
   --header-font-weight: 700;
+  --button-background: #cbbeb5;
 }
 
 /* This forces Box model into including padding and border in element size calculations if an element has been given a specific size. */
@@ -106,7 +112,7 @@ button,
   font-family: inherit;
 
   /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: var(--primary-color);
+  background-color: var(--button-background);
   color: var(--button-text-primary);
   text-decoration: none;
 
