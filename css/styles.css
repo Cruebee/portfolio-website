@@ -47,7 +47,7 @@ Other Grey: #696969;
 
 /* BODY */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Lato', sans-serif; /* Remember that you have to add the 'Lato' font into the <head> of an HTML document before it will load. The comma followed by sans-serif is a default font that will be used if Lato can't be used. */
   font-weight: 400;
   font-size: var(--secondary-font-size);
   line-height: 1.6;
