@@ -87,6 +87,8 @@ a:visited {
 }
 
 /* a:hover shows an effect when the mouse is hovering over a link or a button. a:focus does the same thing while the user navigates the web page with the keyboard */
+
+/* Important note that a:hover must come after a:visited, and a:active must come after a:hover in order to work. */
 a:hover,
 a:focus {
   /* No underlining when hovering over a link */
