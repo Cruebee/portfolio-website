@@ -3,12 +3,13 @@
 
 <head>
 
-  <meta charset="utf-8"/>
+  <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Crue's Projects</title>
   <!-- Is the following code the most effective way to add in a favicon downloaded from the internet? -->
   <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="dist/css/style.production.css">
 
@@ -18,18 +19,20 @@
 
   <header class="page-header">
 
-    <img  src="img/crue_jameson_logo.svg" alt="Crue Jameson" class="page-header__item">
+    <img src="img/crue_jameson_logo.svg" alt="Crue Jameson" class="page-header__item">
 
     <nav class="main-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
-          <a href="index.html" role="menuitem" target="_self" class="navigation-list__item">Home</a> <!-- This is BEM naming convention. (Block Element Modifier). -->
+          <a href="index.html" role="menuitem" target="_self" class="navigation-list__item">Home</a>
+          <!-- This is BEM naming convention. (Block Element Modifier). -->
         </li>
         <li role="presentation">
           <a href="about.html" role="menuitem" target="_self" class="navigation-list__item">About Crue</a>
         </li>
         <li role="presentation">
-          <a href="work.html" role="menuitem" target="_self" class="navigation-list__item navigation-list__item--active">Crue's Projects</a>
+          <a href="work.html" role="menuitem" target="_self"
+            class="navigation-list__item navigation-list__item--active">Crue's Projects</a>
         </li>
         <li role="presentation">
           <a href="contact.html" role="menuitem" target="_self" class="navigation-list__item">Contact Crue</a>
@@ -38,56 +41,63 @@
     </nav>
 
   </header>
-  <section>
+  <section class="project-container">
     <h1>My Projects</h1>
     <div class="grid">
       <div class="grid__item">
-        <h2>Arrow Spine Calculator</h2>
-        <p>I have been developing a mobile web app to help people learning about archery, find which spine they need to use for their arrows.</p>
-        <a href="#">Project coming soon!</a>
+        <h2>myFlix</h2>
+        <p>I designed and created both the frontend and backend for a movie lover's app. Here users can create profiles,
+          view a list of movies with details about the movies, their directors, and genres and more!</p>
+        <a href="cruebeeflix.html">Mmmmovies!</a>
       </div>
       <div class="grid__item">
-        <h2>Accuracy Tracker</h2>
-        <p>Another project I have been working on heavily is the accuracy tracker. This is a mobile web app I am working on to help archers keep track of their scores in shooting rounds.</p>
-        <a href="#">Project on its way!</a>
+        <h2>Quiztron</h2>
+        <p>I created a quiz app to test out some of the features that Angular has to offer. Here users can select from a
+          few short quizzes and view the results of the quiz.</p>
+        <a href="quiztron.html">Take a quizzy!</a>
       </div>
       <div class="grid__item">
-        <h2>Fletch Specs</h2>
-        <p>Archers are constantly facing issues of accuracy. Sometimes it can be hard to tell if there is an issue with equipment, or if there is an issue with the archer. The archer will be able to input an arrow type and the accuracy of the hit and track these records for their own use.
-          <a href="#">Project in the works!</a>
-        </div>
-        <div class="grid__item">
-          <h2>JavaScript</h2>
-          <p>My experience with JavaScript and some of my favorite projects that are JavaScript heavy.</p>
-          <a href="https://cruebee.github.io/jQuery-poke-tracker/">See my JavaScript</a>
-        </div>
-        <div class="grid__item">
-          <h2>HTML</h2>
-          <p>Here is some of my favorite HTML work!</p>
-          <a href="https://github.com/Cruebee/jQuery-poke-tracker/blob/master/index.html">My HTML Projects</a>
-        </div>
-        <div class="grid__item">
-          <h2>Travel Board</h2>
-          <p>My partner and I love to travel! I wanted us to be able to track and share all of the things that we do while we are on vacation, so we can help our friends achieve their dream vacation goals!
-            <a href="#">Project on the way!</a>
-          </div>
-        </div>
-      </section>
+        <h2>Memberberry</h2>
+        <p>A simple To-Do app to help you member!</p>
+        <a href="memberberry.html">You member right?</a>
+      </div>
+      <div class="grid__item">
+        <h2>JavaScript</h2>
+        <p>My experience with JavaScript and some of my favorite projects that are JavaScript heavy.</p>
+        <a href="https://cruebee.github.io/jQuery-poke-tracker/">See my JavaScript</a>
+      </div>
+      <div class="grid__item">
+        <h2>HTML</h2>
+        <p>Here is some of my favorite HTML work!</p>
+        <a href="https://github.com/Cruebee/jQuery-poke-tracker/blob/master/index.html">My HTML Projects</a>
+      </div>
+      <div class="grid__item">
+        <h2>Travel Board</h2>
+        <p>My partner and I love to travel! I wanted us to be able to track and share all of the things that we do while
+          we are on vacation, so we can help our friends achieve their dream vacation goals!
+        </p>
+        <a href="#">Project on the way!</a>
+      </div>
+    </div>
+  </section>
 
 
 
-      <footer class="page-footer">
+  <footer class="page-footer">
 
-        <p>Find Me On</p>
-        <div class="social-media">
-          <a href="https://github.com/Cruebee" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
-          <a href="https://twitter.com/cruebee" target="_blank"><img src="img/twitter_icon.svg" alt="Twitter"></a>
-          <a href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/" target="_blank"><img src="img/linkedin_icon.svg" alt="LinkedIn"></a>
-          <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"><img src="img/instagram_icon.svg" alt="Instagram"></a>
-        </div>
-      </footer>
+    <p>Find Me On</p>
+    <div class="social-media">
+      <a href="https://github.com/Cruebee" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
+      <a href="https://twitter.com/cruebee" target="_blank"><img src="img/twitter_icon.svg" alt="Twitter"></a>
+      <a href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/" target="_blank"><img src="img/linkedin_icon.svg"
+          alt="LinkedIn"></a>
+      <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"><img src="img/instagram_icon.svg"
+          alt="Instagram"></a>
+    </div>
+  </footer>
 
-      <script src="src/js/tota11y.min.js"></script>
+  <script src="src/js/tota11y.min.js"></script>
 
-    </body>
-    </html>
+</body>
+
+</html>
