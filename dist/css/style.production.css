@@ -25,25 +25,40 @@ Grid Background Color: #ddd;
 Header Font Weight: 700;
 Button Background: #cbbeb5;
 Other Grey: #696969;
+
+New Grey: #7F8688;
+New LightGrey: #929D9E;
+Green: #4caf50;
+White: #f2f2f2;
+#0ff
+#67c8ff
 */
 
 /* CSS variables */
 
-/* This forces Box model into including padding and border in element size calculations if an element has been given a specific size. */
+/* This forces Box model into including padding and border
+ in element size calculations if an element has been given a specific size. */
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/* meaning if you wanted an element of 124px with a padding of 20px and a border of 4px would actually turn into 100px making it more uniform. */
+/* meaning if you wanted an element of 124px with a padding
+of 20px and a border of 4px would actually turn into 100px
+making it more uniform. */
 
 /* BODY */
 body {
-  font-family: 'Lato', sans-serif; /* Remember that you have to add the 'Lato' font into the <head> of an HTML document before it will load. The comma followed by sans-serif is a default font that will be used if Lato can't be used. */
+  /* Remember that you have to add the 'Lato' font
+  into the <head> of an HTML document before it will load.
+  The comma followed by sans-serif is a default font that
+  will be used if Lato can't be used. */
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
-  background-color: #fffafa;
+  background-color: #7f8688;
+  color: #f2f2f2;
 }
 
 p {
@@ -70,19 +85,22 @@ h3 {
 
 /* LINKS */
 a {
-  color: #357b70;
+  color: #0ff;
   font-size: 18px;
 }
 
 a:visited {
   /* visited link */
-  color: #065535;
+  color: #67c8ff;
   font-size: 18px;
 }
 
-/* a:hover shows an effect when the mouse is hovering over a link or a button. a:focus does the same thing while the user navigates the web page with the keyboard */
+/* a:hover shows an effect when the mouse is hovering over a
+link or a button. a:focus does the same thing while the user
+navigates the web page with the keyboard */
 
-/* Important note that a:hover must come after a:visited, and a:active must come after a:hover in order to work. */
+/* Important note that a:hover must come after a:visited,
+and a:active must come after a:hover in order to work. */
 a:hover,
 a:focus {
   /* No underlining when hovering over a link */
@@ -95,7 +113,7 @@ a:focus {
 
 a:active {
   /* selected link */
-  color: #489c79;
+  color: #0ff;
 }
 
 .main-content {
@@ -125,22 +143,30 @@ button {
   display: inline-block;
   font-family: inherit;
 
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #cbbeb5;
-  color: #000;
+  /* styles the background color, font color,
+   and text decoration (underline, etc.) of the button */
+  background-color: #4caf50;
+  color: #f2f2f2;
   text-decoration: none;
 
   /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
 
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  /* gives the button a bottom border with a width of 2px,
+  a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
-  transition: 0.2s opacity; /* The longer format would be:
+  transition: 0.2s opacity;
+  /* The longer format would be:
   transition-duration: 0.2s;
-  transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
+  transition-property: opacity;
+  The shorter format gibves the duration and property
+  requirements, while the (transition-timing-function)
+   defaults to (ease) and the (transition-delay) defaults to
+   (0s) thus allowing a shorthand version by simply using
+   --> transition: (duration) (property); */
 }
 .button {
   /* overwrites browser defaults and resets the border */
@@ -150,22 +176,30 @@ button {
   display: inline-block;
   font-family: inherit;
 
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #cbbeb5;
-  color: #000;
+  /* styles the background color, font color,
+   and text decoration (underline, etc.) of the button */
+  background-color: #4caf50;
+  color: #f2f2f2;
   text-decoration: none;
 
   /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
 
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  /* gives the button a bottom border with a width of 2px,
+  a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
-  transition: 0.2s opacity; /* The longer format would be:
+  transition: 0.2s opacity;
+  /* The longer format would be:
   transition-duration: 0.2s;
-  transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
+  transition-property: opacity;
+  The shorter format gibves the duration and property
+  requirements, while the (transition-timing-function)
+   defaults to (ease) and the (transition-delay) defaults to
+   (0s) thus allowing a shorthand version by simply using
+   --> transition: (duration) (property); */
 }
 .button_secondary {
   /* overwrites browser defaults and resets the border */
@@ -175,22 +209,30 @@ button {
   display: inline-block;
   font-family: inherit;
 
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
-  background-color: #cbbeb5;
-  color: #000;
+  /* styles the background color, font color,
+   and text decoration (underline, etc.) of the button */
+  background-color: #4caf50;
+  color: #f2f2f2;
   text-decoration: none;
 
   /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
   border-radius: 3px;
 
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  /* gives the button a bottom border with a width of 2px,
+  a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.2s opacity;
   -o-transition: 0.2s opacity;
-  transition: 0.2s opacity; /* The longer format would be:
+  transition: 0.2s opacity;
+  /* The longer format would be:
   transition-duration: 0.2s;
-  transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
+  transition-property: opacity;
+  The shorter format gibves the duration and property
+  requirements, while the (transition-timing-function)
+   defaults to (ease) and the (transition-delay) defaults to
+   (0s) thus allowing a shorthand version by simply using
+   --> transition: (duration) (property); */
 }
 
 button:hover,
@@ -205,13 +247,68 @@ button:focus,
 }
 
 .button_secondary {
-  background-color: #ccc;
-  color: #222;
+  background-color: #929d9e;
+  color: #f2f2f2;
+}
+
+.connection {
+  margin: 2px;
+  text-align: center;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.crue-title {
+  font-size: 100px;
+}
+
+/* ------ NAVIGATION ------ */
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #4caf50;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
 }
 
 /* Required fields */
 
-/* When reffering to a (class) to change it's characteristics in CSS you must add the (.) in order to pull up the specific (class). */
+/* When reffering to a (class) to change it's characteristics in
+CSS you must add the (.) in order to pull up the specific (class). */
 
 .required-field {
   font-family: inherit;
@@ -220,41 +317,33 @@ button:focus,
   text-decoration: none;
 }
 
-.max-length {
-  font-family: inherit;
-  font-size: 24px;
-  color: #8b0000;
-  text-decoration: none;
-  padding: 10px;
-}
-
 /* PORTFOLIO PORTRAIT */
 @-webkit-keyframes rotate-picture {
   0% {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    transform: rotateY(0);
   }
 
   100% {
     -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 @keyframes rotate-picture {
   0% {
     -webkit-transform: rotateY(0);
-            transform: rotateY(0);
+    transform: rotateY(0);
   }
 
   100% {
     -webkit-transform: rotateY(360deg);
-            transform: rotateY(360deg);
+    transform: rotateY(360deg);
   }
 }
 
 .rotate-picture {
   -webkit-animation: 0.5s rotate-picture 1 linear;
-          animation: 0.5s rotate-picture 1 linear;
+  animation: 0.5s rotate-picture 1 linear;
 }
 
 .profile__portrait {
@@ -279,35 +368,20 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
-/* PAGE-HEADER      The following is flex-box layout */
-.page-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  padding: 10px;
+.logo-container {
+  float: right;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
-.page-header__item {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;   /* Gives all items base width of 200px and allows to shrink within same ratio. (growth will be added to nav only) */
-  padding: 10px;
-}
+/* ------ ABOUT PAGE ------ */
 
-.page-header__item:last-child {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-  text-align: right;
-}
-
-/* ABOUT PAGE */
 .about {
   clear: both;
   display: -webkit-box;
@@ -315,76 +389,135 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
 
-.about-list {
-  list-style-type: none;
-  padding: 0;
+.about-title {
+  font-size: 50px;
 }
 
-.contact_form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  text-align: center;
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 5px auto 5px auto;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  background-color: #929d9e;
   padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 75%;
+}
+
+.grid-container > div {
+  background-color: #7f8688;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1 / span 3;
+}
+
+.about-blurb {
+  background-color: #929d9e;
+  color: #f2f2f2;
+  padding: 10px;
+  width: 75%;
+  margin: auto;
+}
+
+.cv-container {
+  margin: 10px;
+}
+
+.animated-svg {
+  margin-top: 10px;
+}
+
+/* ------ Contact Page ------ */
+
+.contact-title {
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* Contact Form */
+
+.contact-container {
+  border-radius: 5px;
+  background-color: #929d9e;
+  padding: 0 100px 50px;
+  margin: 40px 100px 5px;
+}
+
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.submit-container {
+  text-align: center;
+}
+
+input[type='submit'] {
+  width: 75%;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  width: 75%;
+  background-color: #45a049;
+}
+
+.col-form_label,
+.col-form_input {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Clear floats after columns */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* responsive design change for small screens */
+@media screen and (max-width: 600px) {
+  input[type='submit'] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .contact-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 10px;
+  display: block;
+  text-align: center;
 }
 
-.contact-buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.contact-all {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-/* NAVIGATION */
-.navigation-list {
-  list-style-type: none;
-}
-
-.navigation-list li {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.navigation-list__item--active {
-  text-decoration: none;
-}
+/* ------ Projects Page ------ */
 
 /* Grid fallback */
 .grid__item {
@@ -402,34 +535,21 @@ button:focus,
   grid-template-columns: 1fr 1fr 1fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
 
   /* grid-template-row: default is auto so you don't even need to add it, grid will add for you. */
-  grid-gap: 10px; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
+  grid-gap: 20px; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
   margin: 1rem;
-}
-.grid > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-.grid > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-.grid > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
 }
 
 .grid__item {
-  background-color: #ddd;
+  background-color: #929d9e;
   width: auto;
   padding: 10px;
-  margin: .5rem;
+  margin: 1rem;
 }
 
 .grid__item:last-child {
   -ms-grid-column: 3;
   grid-column: 3/3;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
   grid-row: 1/1;
 
   /* Longer way to code this:
@@ -443,26 +563,28 @@ button:focus,
 }
 
 /* Here we have Animation @keyframe rules */
-@-webkit-keyframes color-change {    /* color-change is the name of the animation which is used to target a specific element. */
+@-webkit-keyframes color-change {
+  /* color-change is the name of the animation which is used to target a specific element. */
   0% {
     fill: #edc655;
   }
 
   50% {
-    fill: #fcffad;       /* This animation is being used to effect the sun on the about page. the (class) [].sun] has already been added to the SVG image in the example. */
+    fill: #fcffad; /* This animation is being used to effect the sun on the about page. the (class) [].sun] has already been added to the SVG image in the example. */
   }
 
   100% {
     fill: #f76414;
   }
 }
-@keyframes color-change {    /* color-change is the name of the animation which is used to target a specific element. */
+@keyframes color-change {
+  /* color-change is the name of the animation which is used to target a specific element. */
   0% {
     fill: #edc655;
   }
 
   50% {
-    fill: #fcffad;       /* This animation is being used to effect the sun on the about page. the (class) [].sun] has already been added to the SVG image in the example. */
+    fill: #fcffad; /* This animation is being used to effect the sun on the about page. the (class) [].sun] has already been added to the SVG image in the example. */
   }
 
   100% {
@@ -472,7 +594,7 @@ button:focus,
 
 .sun {
   -webkit-animation: 4s color-change infinite alternate linear;
-          animation: 4s color-change infinite alternate linear;
+  animation: 4s color-change infinite alternate linear;
 }
 
 /* Longer format for the .sun animation:
@@ -488,59 +610,59 @@ button:focus,
 @-webkit-keyframes cloud-move {
   from {
     -webkit-transform: translate(100px, 10px);
-            transform: translate(100px, 10px);
+    transform: translate(100px, 10px);
   }
 
   to {
     -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px);
+    transform: translate(0, 10px);
   }
 }
 
 @keyframes cloud-move {
   from {
     -webkit-transform: translate(100px, 10px);
-            transform: translate(100px, 10px);
+    transform: translate(100px, 10px);
   }
 
   to {
     -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px);
+    transform: translate(0, 10px);
   }
 }
 
 .cloud-front {
   -webkit-animation: 20s cloud-move infinite alternate linear;
-          animation: 20s cloud-move infinite alternate linear;
+  animation: 20s cloud-move infinite alternate linear;
 }
 
 @-webkit-keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(-30px, 10px);
-            transform: translate(-30px, 10px);
+    transform: translate(-30px, 10px);
   }
 
   to {
     -webkit-transform: translate(89px, 10px);
-            transform: translate(89px, 10px);
+    transform: translate(89px, 10px);
   }
 }
 
 @keyframes cloud-move-reverse {
   from {
     -webkit-transform: translate(-30px, 10px);
-            transform: translate(-30px, 10px);
+    transform: translate(-30px, 10px);
   }
 
   to {
     -webkit-transform: translate(89px, 10px);
-            transform: translate(89px, 10px);
+    transform: translate(89px, 10px);
   }
 }
 
 .cloud-back {
   -webkit-animation: 10s cloud-move-reverse infinite alternate linear;
-          animation: 10s cloud-move-reverse infinite alternate linear;
+  animation: 10s cloud-move-reverse infinite alternate linear;
 }
 
 .hometown-picture {

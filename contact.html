@@ -1,95 +1,166 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Crue</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-crue.svg"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" /> -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="dist/css/style.production.css"
+    />
+  </head>
 
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact Crue</title>
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="dist/css/style.production.css">
+  <body>
+    <header>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="topnav">
+          <li role="presentation">
+            <img src="img/crue_logo_small.svg" alt="Crue Jameson" />
+          </li>
+          <li role="presentation" class="right">
+            <a href="index.html" role="menuitem" target="_self">Home</a>
+            <!-- This is BEM naming convention. (Block Element Modifier). -->
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" target="_self">About Crue</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" target="_self"
+              >Crue's Projects</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" target="_self" class="active"
+              >Contact Crue</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-</head>
+    <section class="contact-me">
+      <div class="contact-container">
+        <h1 class="contact-title">Contact Me</h1>
+        <form action="./src/php/contact.php" method="post" class="contact-form">
+          <div class="row">
+            <div class="col-form_label">
+              <label for="full-name"
+                ><span class="required-field">*</span>Name: (First and
+                Last)</label
+              >
+            </div>
+            <div class="col-form_input">
+              <input
+                required
+                type="text"
+                id="first-name"
+                name="sender"
+                placeholder="(First Name) (Last Name)"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-form_label">
+              <label for="sender-email"
+                ><span class="required-field">*</span>Email</label
+              >
+            </div>
+            <div class="col-form_input">
+              <input
+                required
+                type="text"
+                id="sender-email"
+                name="senderEmail"
+                placeholder="example@email.com"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-form_label">
+              <label for="message"
+                ><span class="required-field">*</span>Send me a message!</label
+              >
+            </div>
+            <div class="col-form_input">
+              <textarea
+                name="message"
+                id="message"
+                placeholder="Write your message here..."
+                style="height: 200px;"
+              >
+              </textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="submit-container">
+              <input type="submit" value="Submit" />
+              <br />
+              <span style="font-size: 18px;" class="required-field"
+                >* Indicates a required field.</span
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
 
-<body>
+    <section class="additional-contact">
+      <div class="contact-info">
+        <h1>Other ways to reach me</h1>
+        Crue Jameson<br />
+        2215 N. Overland Trl.<br />
+        80521<br />
+        USA<br />
+        <a href="tel:+1-970-980-8519" class="button connection">Call Me! </a>
+        <a href="skype:cruebeedoobie" class="button connection"
+          >Add me on Skype!
+        </a>
+        <a href="mailto:cruebeejameson@gmail.com" class="button connection"
+          >Email me!
+        </a>
+      </div>
+    </section>
 
-  <header class="page-header">
-
-    <img src="img/crue_jameson_logo.svg" alt="Crue Jameson" class="page-header__item">
-
-    <nav class="navigation-list page-header__item">
-      <ul role="menubar">
-        <li class="navtab" role="presentation">
-          <a href="index.html" role="menuitem" target="_self" class="navigation-list__item">Home</a> <!-- Note that (target) default setting is _self -->
-        </li>
-        <li class="navtab" role="presentation">
-          <a href="about.html" role="menuitem" target="_self" class="navigation-list__item">About Crue</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" target="_self" class="navigation-list__item">Crue's Projects</a>
-        </li>
-        <li class="navtab" role="presentation">
-          <a href="contact.html" role="menuitem" target="_self" class="navigation-list__item navigation-list__item--active">Contact Crue</a>
-        </li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <div class="contact-all">
-    <div class="contact_form">
-      <form action="#" method="post" id="contact-form"> <!-- A <form>'s default (method) is to post. a common action might look like: <form action="/login-form-action" method="post"></form> -->
-      <h1>Contact Me</h1>
-
-      <label class="standard-label" for="contact-email"><span class="required-field">*</span>E-mail: </label>
-      <input type="email" id="contact-email" required placeholder="example@email.com"><br><!-- Note you can also use: type="text" which would be a plain text field. Some browsers and mobile devices may react differenty to more semantic type="" situations such as type="email" or type="tel" -->
-      <br>
-
-      <label class="standard-label" for="contact-telephone">Telephone: </label>
-      <input type="tel" id="contact-telephone" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" placeholder="1-555-555-5555"><br>
-
-      <br>
-
-      <label class="standard-label" for="contact-message"><span class="required-field">*</span>Message:</label>
-      <textarea maxlength="240" id="contact-message" required placeholder="Send Crue a message."></textarea><br>
-      <span class="max-length">Max 240 Characters</span><br>
-
-      <br>
-
-      <button type="submit" value="Send message">Send Message</button>
-
-    </form>
-
-    <div class="contact-info">
-      <h1>Contact Info</h1>
-      Crue Jameson<br>
-      2215 N. Overland Trl.<br>
-      80521<br>
-      USA<br>
-      <br>
-      Tel:<a href="tel:+1-970-980-8519">Crue's Phone Number</a><br>
-      Skype:<a href="skype:cruebeedoobie">Crue's Skype</a><br>
-      e-mail:<a href="mailto:cruebeejameson@gmail.com">Crue's Contact Email</a>
+    <footer class="page-footer">
+      <p>Find Me On</p>
+      <div class="social-media">
+        <a href="https://github.com/Cruebee" target="_blank"
+          ><img src="img/github_icon.svg" alt="Github"
+        /></a>
+        <a href="https://twitter.com/cruebee" target="_blank"
+          ><img src="img/twitter_icon.svg" alt="Twitter"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
+          target="_blank"
+          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+        /></a>
+        <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
+          ><img src="img/instagram_icon.svg" alt="Instagram"
+        /></a>
+      </div>
+    </footer>
+    <div class="logo-container">
+      <img src="img/crue_logo.svg" alt="Crue Jameson" />
     </div>
-  </div>
 
-  <div class="contact-buttons">
-    <a href="https://www.instagram.com/cruebeedoobie/" class="button">Check out my Instagram</a>
-    <a href="#" class="button_secondary">My Partner's Projects</a>
-  </div>
-</div>
-<footer class="page-footer">
-
-  <p>Find Me On</p>
-  <div class="social-media">
-    <a href="https://github.com/Cruebee" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
-    <a href="https://twitter.com/cruebee" target="_blank"><img src="img/twitter_icon.svg" alt="Twitter"></a>
-    <a href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/" target="_blank"><img src="img/linkedin_icon.svg" alt="LinkedIn"></a>
-    <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"><img src="img/instagram_icon.svg" alt="Instagram"></a>
-  </div>
-</footer>
-
-<script src="src/js/tota11y.min.js"></script>
-</body>
+    <script src="src/js/tota11y.min.js"></script>
+  </body>
 </html>

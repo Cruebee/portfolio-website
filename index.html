@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Crue Jameson - Portfolio</title>
+    <!-- Is the following code the most effective way to add in a favicon downloaded from the internet? -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-crue.svg"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+  </head>
 
-<head>
+  <body>
+    <header>
+      <nav class="main-navigation page-header__item">
+        <ul role="menubar" class="topnav">
+          <li role="presentation">
+            <img src="img/crue_logo_small.svg" alt="Crue Jameson" />
+          </li>
+          <li role="presentation" class="right">
+            <a href="index.html" role="menuitem" target="_self" class="active"
+              >Home</a
+            >
+            <!-- This is BEM naming convention. (Block Element Modifier). -->
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" target="_self">About Crue</a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" target="_self"
+              >Crue's Projects</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" target="_self"
+              >Contact Crue</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Crue Jameson - Portfolio</title>
-  <!-- Is the following code the most effective way to add in a favicon downloaded from the internet? -->
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="dist/css/style.production.css">
-
-</head>
-
-<body>
-
-  <header class="page-header">
-
-    <img src="img/crue_jameson_logo.svg" alt="Crue Jameson" class="page-header__item">
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" target="_self"
-            class="navigation-list__item navigation-list__item--active">Home</a>
-          <!-- This is BEM naming convention. (Block Element Modifier). -->
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" target="_self" class="navigation-list__item">About Crue</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" target="_self" class="navigation-list__item">Crue's Projects</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" target="_self" class="navigation-list__item">Contact Crue</a>
-        </li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <div class="profile">
-
-    <img src="img/crue_portrait.jpeg" class="profile__portrait rotate-picture"
-      alt="A picture of the developer, Eric Gerlach">
-
-    <h1>Hello World!</h1>
-    <p>
-      My name is Crue Jameson. I am a <span>web</span> designer from Colorado.
-    </p>
-    <a href="https://github.com/Cruebee?tab=repositories" target="_blank">Check out some of my code!</a>
-
-  </div>
-
-  <footer class="page-footer">
-
-    <p>Find Me On</p>
-    <div class="social-media">
-      <a href="https://github.com/Cruebee" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
-      <a href="https://twitter.com/cruebee" target="_blank"><img src="img/twitter_icon.svg" alt="Twitter"></a>
-      <a href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/" target="_blank"><img src="img/linkedin_icon.svg"
-          alt="LinkedIn"></a>
-      <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"><img src="img/instagram_icon.svg"
-          alt="Instagram"></a>
+    <div class="main-title">
+      <h1 class="crue-title">Eric Crue Jameson</h1>
     </div>
-  </footer>
 
-  <script src="src/js/tota11y.min.js"></script>
-</body>
+    <div class="profile">
+      <img
+        src="img/crue_portrait.jpeg"
+        class="profile__portrait rotate-picture"
+        alt="A picture of the developer, Eric Gerlach"
+      />
 
+      <h1>Hello there! My name is Crue.</h1>
+      <p>
+        I am a new <span>web</span> designer and developer from Colorado. I'm
+        thrilled you've decided to look over my portfolio, and I would like to
+        thank you for taking the time to browse my site. Enjoy and happy
+        browsing!
+      </p>
+      <a
+        href="https://github.com/Cruebee?tab=repositories"
+        class="button"
+        target="_blank"
+        >Check out some of my code!</a
+      >
+    </div>
+
+    <footer class="page-footer">
+      <p>Find Me On</p>
+      <div class="social-media">
+        <a href="https://github.com/Cruebee" target="_blank"
+          ><img src="img/github_icon.svg" alt="Github"
+        /></a>
+        <a href="https://twitter.com/cruebee" target="_blank"
+          ><img src="img/twitter_icon.svg" alt="Twitter"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
+          target="_blank"
+          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+        /></a>
+
+        <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
+          ><img src="img/instagram_icon.svg" alt="Instagram"
+        /></a>
+      </div>
+    </footer>
+    <div class="logo-container">
+      <img src="img/crue_logo.svg" alt="Crue Jameson" />
+    </div>
+
+    <!-- <script src="src/js/tota11y.min.js"></script> -->
+  </body>
 </html>

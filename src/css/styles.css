@@ -18,40 +18,55 @@ Grid Background Color: #ddd;
 Header Font Weight: 700;
 Button Background: #cbbeb5;
 Other Grey: #696969;
+
+New Grey: #7F8688;
+New LightGrey: #929D9E;
+Green: #4caf50;
+White: #f2f2f2;
+#0ff
+#67c8ff
 */
 
 /* CSS variables */
 :root {
-  --primary-color: #357b70;
-  --primary-background: #fffafa;
-  --primary-font-color: #222;
+  --primary-color: #4caf50;
+  --primary-background: #7f8688;
+  --primary-font-color: #f2f2f2;
   --primary-font-size: 18px;
-  --button-text-primary: #000;
-  --secondary-color: #ccc;
+  --button-text-primary: #f2f2f2;
+  --secondary-color: #929d9e;
   --secondary-font-size: 16px;
-  --visited-link: #065535;
-  --active-link: #489c79;
+  --visited-link: #67c8ff;
+  --active-link: #0ff;
   --dark-grey: #2b2b2b;
   --error-color: #8b0000;
   --grid-background-color: #ddd;
   --header-font-weight: 700;
-  --button-background: #cbbeb5;
+  --button-background: #4caf50;
 }
 
-/* This forces Box model into including padding and border in element size calculations if an element has been given a specific size. */
+/* This forces Box model into including padding and border
+ in element size calculations if an element has been given a specific size. */
 * {
   box-sizing: border-box;
 }
 
-/* meaning if you wanted an element of 124px with a padding of 20px and a border of 4px would actually turn into 100px making it more uniform. */
+/* meaning if you wanted an element of 124px with a padding
+of 20px and a border of 4px would actually turn into 100px
+making it more uniform. */
 
 /* BODY */
 body {
-  font-family: 'Lato', sans-serif; /* Remember that you have to add the 'Lato' font into the <head> of an HTML document before it will load. The comma followed by sans-serif is a default font that will be used if Lato can't be used. */
+  /* Remember that you have to add the 'Lato' font
+  into the <head> of an HTML document before it will load.
+  The comma followed by sans-serif is a default font that
+  will be used if Lato can't be used. */
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: var(--secondary-font-size);
   line-height: 1.6;
   background-color: var(--primary-background);
+  color: var(--primary-font-color);
 }
 
 p {
@@ -78,7 +93,7 @@ h3 {
 
 /* LINKS */
 a {
-  color: var(--primary-color);
+  color: var(--active-link);
   font-size: var(--primary-font-size);
 }
 
@@ -88,9 +103,12 @@ a:visited {
   font-size: var(--primary-font-size);
 }
 
-/* a:hover shows an effect when the mouse is hovering over a link or a button. a:focus does the same thing while the user navigates the web page with the keyboard */
+/* a:hover shows an effect when the mouse is hovering over a
+link or a button. a:focus does the same thing while the user
+navigates the web page with the keyboard */
 
-/* Important note that a:hover must come after a:visited, and a:active must come after a:hover in order to work. */
+/* Important note that a:hover must come after a:visited,
+and a:active must come after a:hover in order to work. */
 a:hover,
 a:focus {
   /* No underlining when hovering over a link */
@@ -133,7 +151,8 @@ button,
   display: inline-block;
   font-family: inherit;
 
-  /* styles the background color, font color, and text decoration (underline, etc.) of the button */
+  /* styles the background color, font color,
+   and text decoration (underline, etc.) of the button */
   background-color: var(--button-background);
   color: var(--button-text-primary);
   text-decoration: none;
@@ -142,11 +161,18 @@ button,
   padding: 10px;
   border-radius: 3px;
 
-  /* gives the button a bottom border with a width of 2px, a type of solid, and a color in RGBA format */
+  /* gives the button a bottom border with a width of 2px,
+  a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
-  transition: 0.2s opacity; /* The longer format would be:
+  transition: 0.2s opacity;
+  /* The longer format would be:
   transition-duration: 0.2s;
-  transition-property: opacity;       The shorter format gibves the duration and property requirements, while the (transition-timing-function) defaults to (ease) and the (transition-delay) defaults to (0s) thus allowing a shorthand version by simply using --> transition: (duration) (property); */
+  transition-property: opacity;
+  The shorter format gibves the duration and property
+  requirements, while the (transition-timing-function)
+   defaults to (ease) and the (transition-delay) defaults to
+   (0s) thus allowing a shorthand version by simply using
+   --> transition: (duration) (property); */
 }
 
 button:hover,
@@ -165,23 +191,70 @@ button:focus,
   color: var(--primary-font-color);
 }
 
+.connection {
+  margin: 2px;
+  text-align: center;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.crue-title {
+  font-size: 100px;
+}
+
+/* ------ NAVIGATION ------ */
+
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+ul.topnav li {
+  float: left;
+}
+
+.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #4caf50;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
 /* Required fields */
 
-/* When reffering to a (class) to change it's characteristics in CSS you must add the (.) in order to pull up the specific (class). */
+/* When reffering to a (class) to change it's characteristics in
+CSS you must add the (.) in order to pull up the specific (class). */
 
 .required-field {
   font-family: inherit;
   font-size: 26px;
   color: var(--error-color);
   text-decoration: none;
-}
-
-.max-length {
-  font-family: inherit;
-  font-size: 24px;
-  color: var(--error-color);
-  text-decoration: none;
-  padding: 10px;
 }
 
 /* PORTFOLIO PORTRAIT */
@@ -221,24 +294,15 @@ button:focus,
   text-align: center;
 }
 
-/* PAGE-HEADER      The following is flex-box layout */
-.page-header {
-  display: flex;
-  width: 100%;
-  padding: 10px;
+.logo-container {
+  float: right;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 10px;
 }
 
-.page-header__item {
-  flex: 0 1 200px;   /* Gives all items base width of 200px and allows to shrink within same ratio. (growth will be added to nav only) */
-  padding: 10px;
-}
+/* ------ ABOUT PAGE ------ */
 
-.page-header__item:last-child {
-  flex-grow: 1;
-  text-align: right;
-}
-
-/* ABOUT PAGE */
 .about {
   clear: both;
   display: flex;
@@ -246,49 +310,126 @@ button:focus,
   text-align: center;
 }
 
-.about-list {
-  list-style-type: none;
-  padding: 0;
+.about-title {
+  font-size: 50px;
 }
 
-.contact_form {
-  display: flex;
-  flex-direction: row;
-  text-align: center;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 5px;
+  background-color: var(--secondary-color);
   padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 75%;
+}
+
+.grid-container > div {
+  background-color: var(--primary-background);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.item-1 {
+  grid-column: 1 / span 3;
+}
+
+.about-blurb {
+  background-color: var(--secondary-color);
+  color: var(--primary-font-color);
+  padding: 10px;
+  width: 75%;
+  margin: auto;
+}
+
+.cv-container {
+  margin: 10px;
+}
+
+.animated-svg {
+  margin-top: 10px;
+}
+
+/* ------ Contact Page ------ */
+
+.contact-title {
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* Contact Form */
+
+.contact-container {
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  padding: 0 100px 50px;
+  margin: 40px 100px 5px;
+}
+
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.submit-container {
+  text-align: center;
+}
+
+input[type='submit'] {
+  width: 75%;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  width: 75%;
+  background-color: #45a049;
+}
+
+.col-form_label,
+.col-form_input {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Clear floats after columns */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* responsive design change for small screens */
+@media screen and (max-width: 600px) {
+  input[type='submit'] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .contact-info {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
+  display: block;
+  text-align: center;
 }
 
-.contact-buttons {
-  display: flex;
-  flex-direction: row;
-}
-
-.contact-all {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  align-items: center;
-}
-
-/* NAVIGATION */
-.navigation-list {
-  list-style-type: none;
-}
-
-.navigation-list li {
-  display: inline-block;
-  margin-left: 15px;
-}
-
-.navigation-list__item--active {
-  text-decoration: none;
-}
+/* ------ Projects Page ------ */
 
 /* Grid fallback */
 .grid__item {
@@ -309,7 +450,7 @@ button:focus,
 }
 
 .grid__item {
-  background-color: var(--grid-background-color);
+  background-color: var(--secondary-color);
   width: auto;
   padding: 10px;
   margin: 1rem;
@@ -330,13 +471,14 @@ button:focus,
 }
 
 /* Here we have Animation @keyframe rules */
-@keyframes color-change {    /* color-change is the name of the animation which is used to target a specific element. */
+@keyframes color-change {
+  /* color-change is the name of the animation which is used to target a specific element. */
   0% {
     fill: #edc655;
   }
 
   50% {
-    fill: #fcffad;       /* This animation is being used to effect the sun on the about page. the (class) [].sun] has already been added to the SVG image in the example. */
+    fill: #fcffad; /* This animation is being used to effect the sun on the about page. the (class) [].sun] has already been added to the SVG image in the example. */
   }
 
   100% {
