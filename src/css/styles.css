@@ -365,8 +365,6 @@ CSS you must add the (.) in order to pull up the specific (class). */
 .contact-container {
   border-radius: 5px;
   background-color: var(--secondary-color);
-  padding: 0 100px 50px;
-  margin: 40px 100px 5px;
 }
 
 input[type='text'],
