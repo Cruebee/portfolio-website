@@ -20,12 +20,12 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" /> -->
-    <link
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="dist/css/style.production.css"
-    />
+    /> -->
   </head>
 
   <body>
@@ -40,96 +40,103 @@
             <!-- This is BEM naming convention. (Block Element Modifier). -->
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem" target="_self">About Crue</a>
+            <a href="about.html" role="menuitem" target="_self">
+              About Crue
+            </a>
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" target="_self" class="active"
-              >Crue's Projects</a
-            >
+            <a href="work.html" role="menuitem" target="_self" class="active">
+              Crue's Projects
+            </a>
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" target="_self"
-              >Contact Crue</a
-            >
+            <a href="contact.html" role="menuitem" target="_self">
+              Contact Crue
+            </a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <section class="project-container">
-      <h1>My Projects</h1>
-      <div class="grid">
-        <div class="grid__item">
-          <h2>myFlix</h2>
-          <p>
-            I designed and created both the frontend and backend for a movie
-            lover's app. Here users can create profiles, view a list of movies
-            with details about the movies, their directors, and genres and more!
-          </p>
-          <a class="button" href="cruebeeflix.html">Mmmmovies!</a>
+    <div class="content">
+      <section class="project-container">
+        <h1 class="main-title">My Projects</h1>
+        <div class="grid">
+          <div class="grid__item">
+            <h2>myFlix</h2>
+            <p>
+              I designed and created both the frontend and backend for a movie
+              lover's app. Here users can create profiles, view a list of movies
+              with details about the movies, their directors, and genres and
+              more!
+            </p>
+            <a class="button" href="cruebeeflix.html">Mmmmovies!</a>
+          </div>
+          <div class="grid__item">
+            <h2>Quiztron</h2>
+            <p>
+              I created a quiz app to test out some of the features that Angular
+              has to offer. Here users can select from a few short quizzes and
+              view the results of the quiz.
+            </p>
+            <a class="button" href="quiztron.html">Take a quizzy!</a>
+          </div>
+          <div class="grid__item">
+            <h2>Memberberry</h2>
+            <p>A simple To-Do app to help you member!</p>
+            <a class="button" href="memberberry.html">You member right?</a>
+          </div>
+          <div class="grid__item">
+            <h2>meetemup</h2>
+            <p>Check out the meetemup app.</p>
+            <a href="meetemup.html" class="button">meetemup app</a>
+          </div>
+          <div class="grid__item">
+            <h2>HTML</h2>
+            <p>Here is some of my favorite HTML work!</p>
+            <a
+              class="button"
+              href="https://github.com/Cruebee/jQuery-poke-tracker/blob/master/index.html"
+              >My HTML Projects</a
+            >
+          </div>
+          <div class="grid__item">
+            <h2>Travel Board</h2>
+            <p>
+              My partner and I love to travel! I wanted us to be able to track
+              and share all of the things that we do while we are on vacation,
+              so we can help our friends achieve their dream vacation goals!
+            </p>
+            <a class="button" href="#">Project on the way!</a>
+          </div>
         </div>
-        <div class="grid__item">
-          <h2>Quiztron</h2>
-          <p>
-            I created a quiz app to test out some of the features that Angular
-            has to offer. Here users can select from a few short quizzes and
-            view the results of the quiz.
-          </p>
-          <a class="button" href="quiztron.html">Take a quizzy!</a>
-        </div>
-        <div class="grid__item">
-          <h2>Memberberry</h2>
-          <p>A simple To-Do app to help you member!</p>
-          <a class="button" href="memberberry.html">You member right?</a>
-        </div>
-        <div class="grid__item">
-          <h2>meetemup</h2>
-          <p>Check out the meetemup app.</p>
-          <a href="meetemup.html" class="button">meetemup app</a>
-        </div>
-        <div class="grid__item">
-          <h2>HTML</h2>
-          <p>Here is some of my favorite HTML work!</p>
-          <a
-            class="button"
-            href="https://github.com/Cruebee/jQuery-poke-tracker/blob/master/index.html"
-            >My HTML Projects</a
-          >
-        </div>
-        <div class="grid__item">
-          <h2>Travel Board</h2>
-          <p>
-            My partner and I love to travel! I wanted us to be able to track and
-            share all of the things that we do while we are on vacation, so we
-            can help our friends achieve their dream vacation goals!
-          </p>
-          <a class="button" href="#">Project on the way!</a>
-        </div>
-      </div>
-    </section>
+      </section>
 
-    <footer class="page-footer">
-      <p>Find Me On</p>
-      <div class="social-media">
-        <a href="https://github.com/Cruebee" target="_blank"
-          ><img src="img/github_icon.svg" alt="Github"
-        /></a>
-        <a href="https://twitter.com/cruebee" target="_blank"
-          ><img src="img/twitter_icon.svg" alt="Twitter"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
-          target="_blank"
-          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
-        /></a>
+      <div class="foot-wrap">
+        <footer class="page-footer">
+          <p>Find Me On</p>
+          <div class="social-media">
+            <a href="https://github.com/Cruebee" target="_blank"
+              ><img src="img/github_icon.svg" alt="Github"
+            /></a>
+            <a href="https://twitter.com/cruebee" target="_blank"
+              ><img src="img/twitter_icon.svg" alt="Twitter"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
+              target="_blank"
+              ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+            /></a>
 
-        <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
-          ><img src="img/instagram_icon.svg" alt="Instagram"
-        /></a>
+            <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
+              ><img src="img/instagram_icon.svg" alt="Instagram"
+            /></a>
+          </div>
+        </footer>
       </div>
-    </footer>
-    <div class="logo-container">
-      <img src="img/crue_logo.svg" alt="Crue Jameson" />
+      <div class="logo-container">
+        <img src="img/crue_logo.svg" alt="Crue Jameson" />
+      </div>
     </div>
 
     <script src="src/js/tota11y.min.js"></script>

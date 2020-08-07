@@ -136,10 +136,6 @@ a:active {
   max-width: 35rem;
 }
 
-.project-container {
-  text-align: center;
-}
-
 /* BUTTONS */
 button,
 .button,
@@ -165,6 +161,7 @@ button,
   a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
+
   /* The longer format would be:
   transition-duration: 0.2s;
   transition-property: opacity;
@@ -201,7 +198,12 @@ button:focus,
 }
 
 .crue-title {
-  font-size: 100px;
+  font-size: 70px;
+  margin: 1rem;
+}
+
+.crue-span {
+  color: var(--primary-color);
 }
 
 /* ------ NAVIGATION ------ */
@@ -212,6 +214,9 @@ ul.topnav {
   padding: 0;
   overflow: hidden;
   background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 ul.topnav li {
@@ -238,11 +243,8 @@ ul.topnav li.right {
   float: right;
 }
 
-@media screen and (max-width: 600px) {
-  ul.topnav li.right,
-  ul.topnav li {
-    float: none;
-  }
+.content {
+  margin-top: 4rem;
 }
 
 /* Required fields */
@@ -283,7 +285,11 @@ CSS you must add the (.) in order to pull up the specific (class). */
 
 .profile {
   max-width: 700px;
-  margin: 0 auto;
+  margin: auto;
+}
+
+.profile {
+  clear: both;
 }
 
 /* PAGE-FOOTER */
@@ -298,7 +304,13 @@ CSS you must add the (.) in order to pull up the specific (class). */
   float: right;
   text-align: center;
   margin-right: 20px;
-  margin-bottom: 10px;
+}
+
+.foot-wrap {
+  background-color: var(--secondary-color);
+  margin: 10px;
+  padding-bottom: 10px;
+  border-radius: 4px;
 }
 
 /* ------ ABOUT PAGE ------ */
@@ -308,41 +320,49 @@ CSS you must add the (.) in order to pull up the specific (class). */
   display: flex;
   flex-direction: column;
   text-align: center;
+  background-color: var(--secondary-color);
+  margin: 10px;
 }
 
 .about-title {
-  font-size: 50px;
+  font-size: 40px;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 5px;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-background);
   padding: 10px;
   margin: auto;
   margin-top: 10px;
   margin-bottom: 10px;
-  width: 75%;
-}
-
-.grid-container > div {
-  background-color: var(--primary-background);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+  width: 90%;
+  border-radius: 5px;
 }
 
 .item-1 {
   grid-column: 1 / span 3;
 }
 
-.about-blurb {
+.image-16 {
+  grid-column: 1 / span 3;
+}
+
+.grid-container > div {
   background-color: var(--secondary-color);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.about-blurb {
+  background-color: var(--primary-background);
   color: var(--primary-font-color);
   padding: 10px;
-  width: 75%;
   margin: auto;
+  width: 90%;
+  border-radius: 5px;
 }
 
 .cv-container {
@@ -353,120 +373,10 @@ CSS you must add the (.) in order to pull up the specific (class). */
   margin-top: 10px;
 }
 
-/* ------ Contact Page ------ */
-
-.contact-title {
-  text-align: center;
-  padding-top: 30px;
-}
-
-/* Contact Form */
-
-.contact-container {
+svg {
+  border: 5px solid var(--secondary-color);
   border-radius: 5px;
-  background-color: var(--secondary-color);
-  margin: auto;
-}
-
-input[type='text'],
-select,
-textarea {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  resize: vertical;
-}
-
-label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
-}
-
-.submit-container {
-  text-align: center;
-}
-
-input[type='submit'] {
-  width: 75%;
-  background-color: #4caf50;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type='submit']:hover {
-  width: 75%;
-  background-color: #45a049;
-}
-
-.col-form_label,
-.col-form_input {
-  width: 100%;
-  margin-top: 0;
-}
-
-/* Clear floats after columns */
-.row::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-/* responsive design change for small screens */
-@media screen and (max-width: 600px) {
-  input[type='submit'] {
-    width: 100%;
-    margin-top: 0;
-  }
-}
-
-.contact-info {
-  display: block;
-  text-align: center;
-}
-
-/* ------ Projects Page ------ */
-
-/* Grid fallback */
-.grid__item {
-  display: inline-block;
-  width: 33%;
-}
-
-/* Styling CSS Grid */
-
-/* The following is an example of a Grid layout. */
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
-
-  /* grid-template-row: default is auto so you don't even need to add it, grid will add for you. */
-  grid-gap: 20px; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
-  margin: 1rem;
-}
-
-.grid__item {
-  background-color: var(--secondary-color);
-  width: auto;
-  padding: 10px;
-  margin: 1rem;
-}
-
-.grid__item:last-child {
-  grid-column: 3/3;
-  grid-row: 1/1;
-
-  /* Longer way to code this:
-  .grid__item:last-child {
-    grid-column-start: 3;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 3;
-  }
-  */
+  padding: 0;
 }
 
 /* Here we have Animation @keyframe rules */
@@ -533,36 +443,230 @@ input[type='submit']:hover {
   text-align: center;
 }
 
-/* Media Queries all go at the end of CSS as the last rule in CSS is the winner. If you have a new rule following media query, it will not be used. */
+/* ------ Contact Page ------ */
+
+.contact-title {
+  text-align: center;
+  padding-top: 30px;
+}
+
+/* Contact Form */
+
+.contact-container {
+  border-radius: 5px;
+  background-color: var(--secondary-color);
+  margin: 10px;
+  padding: 0 10px;
+}
+
+input[type='text'],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.submit-container {
+  text-align: center;
+}
+
+input[type='submit'] {
+  width: 75%;
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  width: 75%;
+  background-color: #45a049;
+}
+
+.col-form_label,
+.col-form_input {
+  width: 100%;
+  margin-top: 0;
+}
+
+/* Clear floats after columns */
+.row::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.contact-info {
+  display: block;
+  text-align: center;
+}
+
+.additional-contact {
+  background-color: var(--secondary-color);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* ------ Projects Page ------ */
+
+.project-container {
+  text-align: center;
+  background-color: var(--secondary-color);
+  padding-bottom: 20px;
+  border-radius: 4px;
+  margin: 10px;
+}
+
+/* Grid fallback */
+.grid__item {
+  display: inline-block;
+  width: 33%;
+  border-radius: 4px;
+}
+
+/* Styling CSS Grid */
+
+/* The following is an example of a Grid layout. */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
+  grid-template-rows: 1fr 1fr;
+
+  /* grid-template-row: default is auto so you don't even need to add it, grid will add for you. */
+  grid-gap: 20px; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
+  margin: 0 1rem;
+}
+
+.grid > div {
+  width: auto;
+  background-color: var(--primary-background);
+  padding: 10px;
+  border-radius: 4px;
+}
+
+/* Longer way to code this:
+  .grid__item:last-child {
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+  }
+  */
+
+/* Media Queries all go at the end of CSS as the
+last rule in CSS is the winner. If you have a new
+rule following media query, it will not be used. */
+img.profile_portrait.rotate-picture {
+  clear: both;
+}
+
+/* ----- index mediaquery ----- */
+@media screen and (max-width: 600px) {
+  .crue-title {
+    font-size: 40px;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .profile {
+    margin: 1rem;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  img.profile_portrait,
+  .rotate-picture {
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+/* ----- Navbar media Query ------ */
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
+
+/* ------- content media query ------ */
+@media screen and (max-width: 600px) {
+  .content {
+    margin-top: 18rem;
+  }
+}
+
+/* ------ work page mediaquery ------- */
+@media all and (min-width: 500px) and (max-width: 1024px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
 
-@media all and (min-width: 500px) and (max-width: 750px) {
-  .grid {
+/* mediaQuery to make animated svg responsive */
+@media all and (max-width: 600px) {
+  svg {
+    width: 90%;
+  }
+}
+
+/* ---- Contact Form MediaQuery ---- */
+
+/* responsive design change for small screens */
+@media screen and (max-width: 600px) {
+  input[type='submit'] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+/* ---- About Page Media Query ---- */
+@media all and (min-width: 500px) and (max-width: 600px) {
+  .grid-container {
     grid-template-columns: 1fr 1fr;
   }
 }
 
-@media all and (max-width: 750px) {
-  .grid {
-    grid-gap: 10px;
+@media all and (max-width: 600px) {
+  .grid-container {
+    grid-template-columns: 1fr;
   }
+}
 
-  .grid__item:last-child {
-    grid-column: auto / auto;
-    grid-row: auto / auto;
+@media all and (min-width: 500px) and (max-width: 600px) {
+  .item-1 {
+    grid-column: 2 / span 2;
   }
+}
 
-  h1 {
-    font-size: 22px;
+@media all and (max-width: 600px) {
+  .item-1 {
+    grid-column: 1 / span 1;
   }
 }
 
 /* This is the long version of the above code full of redundant code:::
-
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
@@ -591,8 +695,3 @@ input[type='submit']:hover {
 }
 
 */
-@media all and (max-width: 500px) {
-  .page-header {
-    padding: 0;
-  }
-}
