@@ -493,6 +493,14 @@ input[type='submit']:hover {
   background-color: #45a049;
 }
 
+.email-input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
 .col-form_label,
 .col-form_input {
   width: 100%;

@@ -19,12 +19,12 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" /> -->
-    <link
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="dist/css/style.production.css"
-    />
+    /> -->
   </head>
 
   <body>
@@ -64,14 +64,12 @@
       </nav>
     </header>
 
+    <?=$thankYou ?>
+
     <section class="contact-me content">
       <div class="contact-container">
         <h1 class="main-title">Contact Me</h1>
-        <form
-          mailto="ericcjameson@gmail.com"
-          method="post"
-          class="contact-form"
-        >
+        <form method="post" action="./src/php/emailer.php" class="contact-form">
           <div class="row">
             <div class="col-form_label">
               <label for="full-name">
@@ -82,24 +80,25 @@
               <input
                 required
                 type="text"
-                id="Name"
-                name="Name"
+                id="name"
+                name="name"
                 placeholder="(First Name) (Last Name)"
               />
             </div>
           </div>
           <div class="row">
             <div class="col-form_label">
-              <label for="sender-email"
+              <label for="email"
                 ><span class="required-field">*</span>Email
               </label>
             </div>
             <div class="col-form_input">
               <input
                 required
-                type="text"
-                id="Email"
-                name="Email"
+                class="email-input"
+                type="email"
+                id="email"
+                name="senderEmail"
                 placeholder="example@email.com"
               />
             </div>
@@ -112,16 +111,17 @@
             </div>
             <div class="col-form_input">
               <textarea
-                name="Message"
-                id="Message"
+                name="message"
+                id="message"
                 style="height: 200px;"
+                maxlenght="350"
                 placeholder="Type your message here..."
               ></textarea>
             </div>
           </div>
           <div class="row">
             <div class="submit-container">
-              <input type="submit" value="Submit" />
+              <input type="submit" name="submit" value="Submit" />
               <br />
               <span style="font-size: 18px;" class="required-field"
                 >* Indicates a required field.</span
