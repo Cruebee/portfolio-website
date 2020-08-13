@@ -122,18 +122,16 @@ a:active {
   color: var(--active-link);
 }
 
-.main-content {
-  display: block;
-  text-align: center;
-}
-
 .app-ul {
   list-style-type: none;
   padding: 0;
 }
 
+/* ------ Image container for project pages ------ */
 .app-image {
   max-width: 35rem;
+  margin-bottom: 10px;
+  border-radius: 4px;
 }
 
 /* BUTTONS */
@@ -247,6 +245,10 @@ ul.topnav li.right {
   margin-top: 4rem;
 }
 
+.project-content {
+  margin-top: 4rem;
+}
+
 /* Required fields */
 
 /* When reffering to a (class) to change it's characteristics in
@@ -301,9 +303,11 @@ CSS you must add the (.) in order to pull up the specific (class). */
 }
 
 .logo-container {
-  float: right;
-  text-align: center;
-  margin-right: 20px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: -4px;
+  margin-right: 3px;
 }
 
 .foot-wrap {
@@ -579,6 +583,29 @@ img.profile_portrait.rotate-picture {
   clear: both;
 }
 
+/* ------ cruebeeflix ------ */
+.main-content {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* ------ Logo Spinner ------ */
+@media (prefers-reduced-motion: no-preference) {
+  .app-logo {
+    animation: app-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes app-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 /* ----- index mediaquery ----- */
 @media screen and (max-width: 600px) {
   .crue-title {
@@ -619,6 +646,11 @@ img.profile_portrait.rotate-picture {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .project-content {
+    margin-top: 21.5rem;
+  }
+}
 /* ------ work page mediaquery ------- */
 @media all and (min-width: 500px) and (max-width: 1024px) {
   .grid {
@@ -671,6 +703,13 @@ img.profile_portrait.rotate-picture {
 @media all and (max-width: 600px) {
   .item-1 {
     grid-column: 1 / span 1;
+  }
+}
+
+/* ------ app-image ------ */
+@media all and (max-width: 600px) {
+  .app-image {
+    width: 90%;
   }
 }
 

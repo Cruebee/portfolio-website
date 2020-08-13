@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>myFlix | Cruebee</title>
+    <title>cruebeeflix | Cruebee</title>
     <link
       rel="icon"
       type="image/png"
-      href="img/favicon-32x32.png"
+      href="img/favicon-crue.svg"
       sizes="32x32"
     />
     <link
@@ -19,11 +19,12 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
       rel="stylesheet"
     />
-    <link
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="dist/css/style.production.css"
-    />
+    /> -->
   </head>
 
   <body>
@@ -43,7 +44,7 @@
             </a>
           </li>
           <li role="presentation">
-            <a href="work.html" role="menuitem" target="_self" class="active">
+            <a href="work.html" role="menuitem" target="_self">
               Crue's Projects
             </a>
           </li>
@@ -52,87 +53,114 @@
               Contact Crue
             </a>
           </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" target="_self" class="active">
+              Back to Projects
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
-    <main class="main-content">
-      <h1>myFlix</h1>
-      <p>
-        <a
-          href="https://cruebeeflix.herokuapp.com/client"
-          target="_blank"
-          aria-label="Check out the movie app"
-          >Check out the movie app!</a
-        >
-        |
-        <a
-          href="https://github.com/Cruebee/cruebeeflix"
-          target="_blank"
-          aria-label="View the code on GitHub"
-          >GitHub</a
-        >
-        |
-        <a
-          href="https://cruebeeflix.herokuapp.com/documentation.html"
-          target="_blank"
-          aria-label="check out the API"
-          >API</a
-        >
-      </p>
-      <img
-        class="app-image"
-        src="img/cruebeeflix-image.jpeg"
-        alt="myFlix app screenshot"
-      />
-      <div class="grid">
-        <div class="grid__item">
-          <h2>Objective</h2>
-          <p>
-            Explore React by creating the server-side and client-side for a
-            single page application with multiple user views.
-          </p>
-        </div>
-        <div class="grid__item">
-          <h2>Description</h2>
-          <p>
-            This app is all about movies, the directors behind them, and some
-            additional information about the movie, director, and the genre of
-            that movie. It features routing, complex user interaction, and
-            several interfaceable views.
-          </p>
-        </div>
-        <div class="grid__item">
-          <h2>Technologies used</h2>
-          <ul class="app-ul">
-            <li>MongoDB</li>
-            <li>Express</li>
-            <li>React</li>
-            <li>React Redux</li>
-            <li>Bootstrap</li>
-          </ul>
-        </div>
-      </div>
-    </main>
-    <footer class="page-footer">
-      <p>Find Me On</p>
-      <div class="social-media">
-        <a href="https://github.com/Cruebee" target="_blank"
-          ><img src="img/github_icon.svg" alt="Github"
-        /></a>
-        <a href="https://twitter.com/cruebee" target="_blank"
-          ><img src="img/twitter_icon.svg" alt="Twitter"
-        /></a>
-        <a
-          href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
-          target="_blank"
-          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
-        /></a>
 
-        <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
-          ><img src="img/instagram_icon.svg" alt="Instagram"
-        /></a>
+    <div class="project-content">
+      <main class="project-container">
+        <h1>cruebeeflix</h1>
+        <p>
+          <a
+            href="https://cruebeeflix.herokuapp.com/client"
+            target="_blank"
+            aria-label="Check out the movie app"
+            >Check out the movie app!</a
+          >
+          |
+          <a
+            href="https://github.com/Cruebee/cruebeeflix"
+            target="_blank"
+            aria-label="View the code on GitHub"
+            >GitHub</a
+          >
+          |
+          <a
+            href="https://cruebeeflix.herokuapp.com/documentation.html"
+            target="_blank"
+            aria-label="check out the API"
+            >API</a
+          >
+        </p>
+        <img
+          class="app-image"
+          src="img/cruebeeflix-image.jpeg"
+          alt="myFlix app screenshot"
+        />
+        <div class="grid">
+          <div class="grid__item">
+            <h2>Objective</h2>
+            <p>
+              Explore React by creating the server-side and client-side for a
+              single page application with multiple user views.
+            </p>
+          </div>
+          <div class="grid__item">
+            <h2>Description</h2>
+            <p>
+              This app is all about movies, the directors behind them, and some
+              additional information about the movie, director, and the genre of
+              that movie. It features routing, complex user interaction, and
+              several interfaceable views.
+            </p>
+          </div>
+          <div class="grid__item">
+            <h2>Technologies</h2>
+            <ul class="app-ul">
+              <li>MongoDB</li>
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>React</li>
+              <li>React Redux</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+          <div class="grid__item">
+            <h2>Process</h2>
+            <ul class="app-ul">
+              <li>User Stories</li>
+              <li>Sketch Wireframing</li>
+              <li>Prototyping</li>
+              <li>Research/Testing</li>
+              <li>Review/Clean-up</li>
+            </ul>
+          </div>
+        </div>
+      </main>
+
+      <div class="foot-wrap">
+        <footer class="page-footer">
+          <p>Find Me On</p>
+          <div class="social-media">
+            <a href="https://github.com/Cruebee" target="_blank"
+              ><img src="img/github_icon.svg" alt="Github"
+            /></a>
+            <a href="https://twitter.com/cruebee" target="_blank"
+              ><img src="img/twitter_icon.svg" alt="Twitter"
+            /></a>
+            <a
+              href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
+              target="_blank"
+              ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+            /></a>
+
+            <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
+              ><img src="img/instagram_icon.svg" alt="Instagram"
+            /></a>
+          </div>
+        </footer>
       </div>
-    </footer>
+    </div>
+
+    <div class="logo-container">
+      <img src="img/crue_logo.svg" class="app-logo" alt="Crue Jameson" />
+    </div>
+
     <script src="src/js/tota11y.min.js"></script>
   </body>
 </html>
