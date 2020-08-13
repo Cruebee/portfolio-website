@@ -1,87 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>myFlix | Cruebee</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="dist/css/style.production.css"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>myFlix | Cruebee</title>
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-  <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="dist/css/style.production.css" />
-</head>
-
-<body>
-  <header class="page-header">
-    <img src="img/crue_jameson_logo.svg" alt="Crue Jameson" class="page-header__item" />
-    <nav class="main-navigation page-header__item">
-      <ul role="menubar" class="navigation-list">
-        <li role="presentation">
-          <a href="index.html" role="menuitem" target="_self" class="navigation-list__item">Home</a>
-        </li>
-        <li role="presentation">
-          <a href="about.html" role="menuitem" target="_self" class="navigation-list__item">About Crue</a>
-        </li>
-        <li role="presentation">
-          <a href="work.html" role="menuitem" target="_self" class="navigation-list__item">Crue's Projects</a>
-        </li>
-        <li role="presentation">
-          <a href="contact.html" role="menuitem" target="_self" class="navigation-list__item">Contact Crue</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-content">
-    <h1>myFlix</h1>
-    <p>
-      <a href="https://cruebeeflix.herokuapp.com/client" target="_blank" aria-label="Check out the movie app">Check out
-        the movie app!</a> |
-      <a href="https://github.com/Cruebee/cruebeeflix" target="_blank" aria-label="View the code on GitHub">GitHub</a> |
-      <a href="https://cruebeeflix.herokuapp.com/documentation.html" target="_blank"
-        aria-label="check out the API">API</a>
-    </p>
-    <img class="app-image" src="img/cruebeeflix-image.jpeg" alt="myFlix app screenshot" />
-    <div class="grid">
-      <div class="grid__item">
-        <h2>Objective</h2>
-        <p>
-          Explore React by creating the server-side and client-side for a single page application with multiple user
-          views.
-        </p>
-      </div>
-      <div class="grid__item">
-        <h2>Description</h2>
-        <p>
-          This app is all about movies, the directors behind them, and some additional information about the movie,
-          director, and the genre of that movie. It features routing, complex user interaction, and several
-          interfaceable views.
-        </p>
-      </div>
-      <div class="grid__item">
-        <h2>Technologies used</h2>
-        <ul class="app-ul">
-          <li>MongoDB</li>
-          <li>Express</li>
-          <li>React</li>
-          <li>React Redux</li>
-          <li>Bootstrap</li>
+  <body>
+    <header>
+      <nav class="main-navigation page-header__item">
+        <!-- This is BEM naming convention.^^ (Block Element Modifier). -->
+        <ul role="menubar" class="topnav">
+          <li role="presentation">
+            <img src="img/crue_logo_small.svg" alt="Crue Jameson" />
+          </li>
+          <li role="presentation" class="right">
+            <a href="index.html" role="menuitem" target="_self">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem" target="_self">
+              About Crue
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="work.html" role="menuitem" target="_self" class="active">
+              Crue's Projects
+            </a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" target="_self">
+              Contact Crue
+            </a>
+          </li>
         </ul>
+      </nav>
+    </header>
+    <main class="main-content">
+      <h1>myFlix</h1>
+      <p>
+        <a
+          href="https://cruebeeflix.herokuapp.com/client"
+          target="_blank"
+          aria-label="Check out the movie app"
+          >Check out the movie app!</a
+        >
+        |
+        <a
+          href="https://github.com/Cruebee/cruebeeflix"
+          target="_blank"
+          aria-label="View the code on GitHub"
+          >GitHub</a
+        >
+        |
+        <a
+          href="https://cruebeeflix.herokuapp.com/documentation.html"
+          target="_blank"
+          aria-label="check out the API"
+          >API</a
+        >
+      </p>
+      <img
+        class="app-image"
+        src="img/cruebeeflix-image.jpeg"
+        alt="myFlix app screenshot"
+      />
+      <div class="grid">
+        <div class="grid__item">
+          <h2>Objective</h2>
+          <p>
+            Explore React by creating the server-side and client-side for a
+            single page application with multiple user views.
+          </p>
+        </div>
+        <div class="grid__item">
+          <h2>Description</h2>
+          <p>
+            This app is all about movies, the directors behind them, and some
+            additional information about the movie, director, and the genre of
+            that movie. It features routing, complex user interaction, and
+            several interfaceable views.
+          </p>
+        </div>
+        <div class="grid__item">
+          <h2>Technologies used</h2>
+          <ul class="app-ul">
+            <li>MongoDB</li>
+            <li>Express</li>
+            <li>React</li>
+            <li>React Redux</li>
+            <li>Bootstrap</li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </main>
-  <footer class="page-footer">
-    <p>Find Me On</p>
-    <div class="social-media">
-      <a href="https://github.com/Cruebee" target="_blank"><img src="img/github_icon.svg" alt="Github"></a>
-      <a href="https://twitter.com/cruebee" target="_blank"><img src="img/twitter_icon.svg" alt="Twitter"></a>
-      <a href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/" target="_blank"><img src="img/linkedin_icon.svg"
-          alt="LinkedIn"></a>
-      <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"><img src="img/instagram_icon.svg"
-          alt="Instagram"></a>
-    </div>
-  </footer>
-  <script src="src/js/tota11y.min.js"></script>
-</body>
+    </main>
+    <footer class="page-footer">
+      <p>Find Me On</p>
+      <div class="social-media">
+        <a href="https://github.com/Cruebee" target="_blank"
+          ><img src="img/github_icon.svg" alt="Github"
+        /></a>
+        <a href="https://twitter.com/cruebee" target="_blank"
+          ><img src="img/twitter_icon.svg" alt="Twitter"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
+          target="_blank"
+          ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+        /></a>
 
+        <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
+          ><img src="img/instagram_icon.svg" alt="Instagram"
+        /></a>
+      </div>
+    </footer>
+    <script src="src/js/tota11y.min.js"></script>
+  </body>
 </html>
