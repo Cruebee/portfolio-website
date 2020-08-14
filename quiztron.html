@@ -19,6 +19,11 @@
       href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
       rel="stylesheet"
     />
+    <!-- Load Icon library for hamburger menu icon for small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" -->
     <link
       rel="stylesheet"
@@ -29,37 +34,20 @@
 
   <body>
     <header>
-      <nav class="main-navigation page-header__item">
-        <!-- This is BEM naming convention.^^ (Block Element Modifier). -->
-        <ul role="menubar" class="topnav">
-          <li role="presentation">
-            <img src="img/crue_logo_small.svg" alt="Crue Jameson" />
-          </li>
-          <li role="presentation" class="right">
-            <a href="index.html" role="menuitem" target="_self">Home</a>
-          </li>
-          <li role="presentation">
-            <a href="about.html" role="menuitem" target="_self">
-              About Crue
-            </a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" target="_self">
-              Crue's Projects
-            </a>
-          </li>
-          <li role="presentation">
-            <a href="contact.html" role="menuitem" target="_self">
-              Contact Crue
-            </a>
-          </li>
-          <li role="presentation">
-            <a href="work.html" role="menuitem" target="_self" class="active">
-              Back to Projects
-            </a>
-          </li>
-        </ul>
-      </nav>
+      <div id="navbar" data-toggle="collapse">
+        <nav class="top-nav" id="my-topnav">
+          <a href="index.html" role="menuitem" target="_self">Home</a>
+          <a href="about.html" role="menuitem" target="_self">About Crue</a>
+          <a href="work.html" role="menuitem" target="_self" class="active"
+            >Crue's Projects</a
+          >
+          <a href="contact.html" role="menuitem" target="_self">Contact Crue</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <!-- link with class="icon" used to open/close navbar on small screens -->
+        </nav>
+      </div>
     </header>
 
     <div class="project-content">
@@ -121,35 +109,36 @@
           </div>
         </div>
       </main>
+    </div>
 
-      <div class="foot-wrap">
-        <footer class="page-footer">
-          <p>Find Me On</p>
-          <div class="social-media">
-            <a href="https://github.com/Cruebee" target="_blank"
-              ><img src="img/github_icon.svg" alt="Github"
-            /></a>
-            <a href="https://twitter.com/cruebee" target="_blank"
-              ><img src="img/twitter_icon.svg" alt="Twitter"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
-              target="_blank"
-              ><img src="img/linkedin_icon.svg" alt="LinkedIn"
-            /></a>
-
-            <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
-              ><img src="img/instagram_icon.svg" alt="Instagram"
-            /></a>
-          </div>
-        </footer>
-      </div>
+    <div class="foot-wrap">
+      <footer class="page-footer">
+        <p>Find Me On</p>
+        <div class="social-media">
+          <a href="https://github.com/Cruebee" target="_blank"
+            ><img src="img/github_icon.svg" alt="Github"
+          /></a>
+          <a href="https://twitter.com/cruebee" target="_blank"
+            ><img src="img/twitter_icon.svg" alt="Twitter"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
+            target="_blank"
+            ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+          /></a>
+          <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
+            ><img src="img/instagram_icon.svg" alt="Instagram"
+          /></a>
+        </div>
+      </footer>
     </div>
 
     <div class="logo-container">
       <img src="img/crue_logo.svg" class="app-logo" alt="Crue Jameson" />
     </div>
 
+    <script src="src/js/navhide.js"></script>
+    <script src="src/js/burgermenu.js"></script>
     <script src="src/js/tota11y.min.js"></script>
   </body>
 </html>
