@@ -182,6 +182,13 @@ button:focus,
   opacity: 0.8;
 }
 
+a.button,
+a.button:active,
+a.button:hover {
+  text-decoration: none;
+  color: white;
+}
+
 .button_secondary {
   background-color: var(--secondary-color);
   color: var(--primary-font-color);
@@ -192,6 +199,45 @@ button:focus,
   text-align: center;
 }
 
+/* PORTFOLIO PORTRAIT */
+@keyframes rotate-picture {
+  0% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.rotate-picture {
+  animation: 0.5s rotate-picture 1 linear;
+}
+
+.profile__portrait {
+  float: left;
+  width: 100%; /* Height and Width can be expressed in multiple ways including % (80%) which can be useful when coding for multiple platforms. This is not limited to px and %. */
+  max-width: 325px; /* Combined with (width: 100%;) this allows the image to take up 100% of the width of smaller screens and allowing the image to be larger/but no larger than the 325px allotted */
+  height: auto; /* By setting the height to auto the aspect ratio remains true (no squished/stretched images) */
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.profile {
+  clear: both;
+}
+
+.profile-text {
+  font-size: 18px;
+  margin-bottom: 1rem;
+}
+
 .main-title {
   text-align: center;
 }
@@ -199,10 +245,19 @@ button:focus,
 .crue-title {
   font-size: 70px;
   margin: 1rem;
+  margin-bottom: 3rem;
 }
 
 .crue-span {
   color: var(--primary-color);
+}
+
+.index-spacer {
+  margin-top: 2rem;
+}
+
+.index-foot__wrap {
+  margin-top: 5rem;
 }
 
 /* ------ NAVIGATION ------ */
@@ -248,7 +303,6 @@ button:focus,
 
 .project-content {
   margin-top: 4rem;
-  height: 100%;
 }
 
 /* Required fields */
@@ -263,39 +317,6 @@ CSS you must add the (.) in order to pull up the specific (class). */
   text-decoration: none;
 }
 
-/* PORTFOLIO PORTRAIT */
-@keyframes rotate-picture {
-  0% {
-    transform: rotateY(0);
-  }
-
-  100% {
-    transform: rotateY(360deg);
-  }
-}
-
-.rotate-picture {
-  animation: 0.5s rotate-picture 1 linear;
-}
-
-.profile__portrait {
-  float: left;
-  width: 100%; /* Height and Width can be expressed in multiple ways including % (80%) which can be useful when coding for multiple platforms. This is not limited to px and %. */
-  max-width: 325px; /* Combined with (width: 100%;) this allows the image to take up 100% of the width of smaller screens and allowing the image to be larger/but no larger than the 325px allotted */
-  height: auto; /* By setting the height to auto the aspect ratio remains true (no squished/stretched images) */
-  margin-right: 40px;
-  border-radius: 50%;
-}
-
-.profile {
-  max-width: 700px;
-  margin: auto;
-}
-
-.profile {
-  clear: both;
-}
-
 /* PAGE-FOOTER */
 .page-footer {
   clear: both;
@@ -306,7 +327,12 @@ CSS you must add the (.) in order to pull up the specific (class). */
 
 .logo-container {
   text-align: center;
-  padding: 1rem;
+  margin: 0;
+  padding-bottom: 3rem;
+}
+
+.app-logo {
+  padding: 0;
 }
 
 .foot-wrap {
@@ -460,39 +486,62 @@ svg {
   background-color: var(--secondary-color);
   margin: 10px;
   padding: 0 10px;
+  text-align: center;
 }
 
 input[type='text'],
 select,
 textarea {
-  width: 100%;
+  width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 4px;
   resize: vertical;
 }
 
+input[type='email'],
+select,
+textarea {
+  width: 50%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.contact-label {
+  margin-left: 25%;
+}
+
 label {
-  padding: 12px 12px 12px 0;
-  display: inline-block;
+  padding-right: 12px;
+  padding-top: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+label {
+  clear: all;
 }
 
 .submit-container {
   text-align: center;
 }
 
-input[type='submit'] {
-  width: 75%;
+.contact-btn {
+  width: 45%;
   background-color: #4caf50;
   color: white;
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
+  text-decoration: none;
   cursor: pointer;
+  margin: 1rem;
 }
 
-input[type='submit']:hover {
-  width: 75%;
+.contact-btn:hover {
   background-color: #45a049;
 }
 
@@ -524,7 +573,7 @@ input[type='submit']:hover {
 
 .additional-contact {
   background-color: var(--secondary-color);
-  margin: 10px;
+  margin: 3rem;
   padding: 10px;
   border-radius: 4px;
 }
@@ -537,6 +586,18 @@ input[type='submit']:hover {
   padding-bottom: 20px;
   border-radius: 4px;
   margin: 10px;
+}
+
+.proj-desc {
+  height: 45%;
+}
+
+.projects {
+  margin-bottom: 1rem;
+}
+
+.pokedex-desc {
+  height: 45%;
 }
 
 /* Grid fallback */
@@ -589,19 +650,59 @@ img.profile_portrait.rotate-picture {
   margin-top: 10px;
 }
 
+@media screen and (min-height: 870px) {
+  .profile-hello {
+    padding-top: 3rem;
+    font-size: 50px;
+  }
+
+  .profile-text {
+    padding-top: 2rem;
+    font-size: 40px;
+  }
+
+  .index-spacer__bottom {
+    margin-top: 5rem;
+  }
+
+  .crue-title {
+    margin-bottom: 2rem;
+  }
+
+  .profile__portrait {
+    margin-top: 2rem;
+  }
+}
+
 /* ------ Logo Spinner ------ */
 @media (prefers-reduced-motion: no-preference) {
+  .logo-container {
+    animation: app-logo-rotate 5s infinite ease-in-out;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
   .app-logo {
-    animation: app-logo-spin infinite 20s linear;
+    animation: app-logo-spin 5s infinite ease-in-out;
+  }
+}
+
+@keyframes app-logo-rotate {
+  20% {
+    transform: rotateY(0);
+  }
+
+  100% {
+    transform: rotateY(360deg);
   }
 }
 
 @keyframes app-logo-spin {
-  from {
+  20% {
     transform: rotate(0deg);
   }
 
-  to {
+  100% {
     transform: rotate(360deg);
   }
 }
@@ -699,9 +800,21 @@ img.profile_portrait.rotate-picture {
 
 /* responsive design change for small screens */
 @media screen and (max-width: 600px) {
-  input[type='submit'] {
+  input[type='text'],
+  select,
+  textarea,
+  input[type='email'],
+  select,
+  textarea,
+  .contact-btn {
     width: 100%;
     margin-top: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .contact-label {
+    margin-left: 0;
   }
 }
 

@@ -56,8 +56,8 @@
         <form method="post" action="contact.php" class="contact-form">
           <div class="row">
             <div class="col-form_label">
-              <label for="full-name">
-                <span class="required-field">*</span>Name: (First and Last)
+              <label class="contact-label" for="full-name">
+                <span class="required-field">*</span>Your Name
               </label>
             </div>
             <div class="col-form_input">
@@ -72,7 +72,7 @@
           </div>
           <div class="row">
             <div class="col-form_label">
-              <label for="email"
+              <label class="contact-label" for="email"
                 ><span class="required-field">*</span>Email
               </label>
             </div>
@@ -89,7 +89,7 @@
           </div>
           <div class="row">
             <div class="col-form_label">
-              <label for="subject"
+              <label class="contact-label" for="subject"
                 ><span class="required-field">*</span>Subject
               </label>
             </div>
@@ -105,7 +105,7 @@
           </div>
           <div class="row">
             <div class="col-form_label">
-              <label for="message">
+              <label class="contact-label" for="message">
                 <span class="required-field">*</span>Send me a message!
               </label>
             </div>
@@ -121,7 +121,9 @@
           </div>
           <div class="row">
             <div class="submit-container">
-              <button type="submit" name="submit">Submit</button>
+              <button class="contact-btn" type="submit" name="submit">
+                Submit
+              </button>
               <br />
               <span style="font-size: 18px;" class="required-field"
                 >* Indicates a required field.</span
