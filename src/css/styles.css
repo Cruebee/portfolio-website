@@ -298,7 +298,8 @@ a.button:hover {
 }
 
 .content {
-  margin: 7rem 2.5rem 0;
+  margin: 5%;
+  margin-top: 10%;
 }
 
 .project-content {
