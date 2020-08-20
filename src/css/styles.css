@@ -1,48 +1,39 @@
 /*
-Colors Used
-Primary Color: #357b70;
-Primary Background: #fffafa;
-Primary Font Color: #222;
-Primary Font Size: 18px;
-New Primary Button Text: #000;
-Old Primary Button Text Color: #f8f8ff;
-New Secondary Color: #ccc;
-Secondary Color: #e0b354;
-Secondary Font Size: 16px;
-New Visited Link: #065535;
-Old Visited Link: #05676e;
-Active Link: #489c79;
-Dark Grey: #2b2b2b;
-Error Color: #8b0000;
-Grid Background Color: #ddd;
-Header Font Weight: 700;
-Button Background: #cbbeb5;
-Other Grey: #696969;
+Colors Used:
+Teal: #0292B7;
+Turquoise: #1AC8DB;
+Taupe: #8C756A;
+Misty Blue: #DEE2EC;
+Black: #000;
+ErrorRed: #8b0000;
 
-New Grey: #7F8688;
-New LightGrey: #929D9E;
-Green: #4caf50;
-White: #f2f2f2;
-#0ff
-#67c8ff
+Ocean: #022444;
+Orange: #f27d42;
+Lightblue: #55bdca;
+Sky: #96fff;
+Mist: #c8eff4;
+Ivory: #FFFFF0;
+OliveDrab: #737c00;
 */
 
 /* CSS variables */
 :root {
-  --primary-color: #4caf50;
-  --primary-background: #7f8688;
-  --primary-font-color: #f2f2f2;
+  --primary-color: #737c00;
+  --primary-background: #fffff0;
+  --primary-font-color: #000;
   --primary-font-size: 18px;
-  --button-text-primary: #f2f2f2;
-  --secondary-color: #929d9e;
+  --button-text-primary: #8c756a;
+  --secondary-color: #737c00;
   --secondary-font-size: 16px;
-  --visited-link: #67c8ff;
-  --active-link: #0ff;
+  --visited-link: #f27d42;
+  --active-link: #0292b7;
   --dark-grey: #2b2b2b;
   --error-color: #8b0000;
-  --grid-background-color: #ddd;
+  --grid-background-color: #8c756a;
   --header-font-weight: 700;
-  --button-background: #4caf50;
+  --button-background: #737c00;
+  --white: #fffff0;
+  --black: #000;
 }
 
 /* This forces Box model into including padding and border
@@ -72,6 +63,8 @@ body {
 
 p {
   font-size: var(--secondary-font-size);
+  padding: 1rem;
+  margin: 1rem;
 }
 
 /* HEADERS */
@@ -160,6 +153,7 @@ button,
   a type of solid, and a color in RGBA format */
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition: 0.2s opacity;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   /* The longer format would be:
   transition-duration: 0.2s;
@@ -180,6 +174,7 @@ button:focus,
 
   /* reduces the opacity of the button to 80% */
   opacity: 0.8;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 a.button,
@@ -187,16 +182,27 @@ a.button:active,
 a.button:hover {
   text-decoration: none;
   color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .button_secondary {
   background-color: var(--secondary-color);
   color: var(--primary-font-color);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .connection {
   margin: 2px;
   text-align: center;
+}
+
+/* Main Title, and Secondary Titles */
+.main-title {
+  text-align: center;
+}
+
+.secondary-title {
+  font-size: 8vw;
 }
 
 /* PORTFOLIO PORTRAIT */
@@ -223,41 +229,26 @@ a.button:hover {
   border-radius: 50%;
 }
 
-.profile {
-  max-width: 700px;
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 1200px;
   margin: auto;
-  text-align: center;
-}
-
-.profile {
-  clear: both;
-}
-
-.profile-text {
-  font-size: 18px;
-  margin-bottom: 1rem;
-}
-
-.main-title {
-  text-align: center;
+  height: 100vh;
 }
 
 .crue-title {
-  font-size: 70px;
-  margin: 1rem;
-  margin-bottom: 3rem;
+  font-size: 12vw;
+  margin: 0 1rem;
 }
 
 .crue-span {
-  color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .index-spacer {
   margin-top: 2rem;
-}
-
-.index-foot__wrap {
-  margin-top: 5rem;
 }
 
 /* ------ NAVIGATION ------ */
@@ -269,37 +260,48 @@ a.button:hover {
 }
 
 .top-nav {
-  background-color: #333;
+  background-color: var(--primary-background);
   overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .top-nav a {
-  float: left;
+  float: right;
   display: block;
-  color: #f2f2f2;
+  color: var(--primary-font-color);
   text-align: center;
-  padding: 14px 16px;
+  padding: 18px 16px;
   text-decoration: none;
   font-size: 17px;
+  border-radius: 4px;
+}
+
+a.logo-link {
+  padding: 4px 0;
+  float: left;
 }
 
 .top-nav a:hover {
-  background-color: #ddd;
-  color: black;
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
 }
 
 .top-nav a.active {
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
+}
+
+a.logo-link:hover {
+  background-color: var(--primary-background);
 }
 
 .top-nav .icon {
+  background: var(--primayr-background);
   display: none;
 }
 
 .content {
   margin: 5%;
-  margin-top: 10%;
 }
 
 .project-content {
@@ -324,12 +326,12 @@ CSS you must add the (.) in order to pull up the specific (class). */
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .logo-container {
   text-align: center;
-  margin: 0;
-  padding-bottom: 3rem;
+  position: static;
 }
 
 .app-logo {
@@ -337,8 +339,6 @@ CSS you must add the (.) in order to pull up the specific (class). */
 }
 
 .foot-wrap {
-  background-color: var(--secondary-color);
-  margin: 6%;
   padding-bottom: 10px;
   border-radius: 4px;
 }
@@ -346,16 +346,130 @@ CSS you must add the (.) in order to pull up the specific (class). */
 /* ------ ABOUT PAGE ------ */
 
 .about {
-  clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
-  background-color: var(--secondary-color);
   margin: 10px;
 }
 
-.about-title {
-  font-size: 40px;
+.about-blurb {
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2%;
+}
+
+.about-me__images {
+  width: 100%;
+}
+
+.dot-circles {
+  text-align: center;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: static;
+  margin: 1%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 2%;
+  border-radius: 4px;
+}
+
+/* Hide the images by default */
+.about-slides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  width: auto;
+  padding: 16px;
+  margin: auto;
+  background-color: var(--primary-color);
+  opacity: 0.8;
+  color: var(--primary-background);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 4px;
+  user-select: none;
+  text-shadow: 3px 3px var(--black);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.slide-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  opacity: 0.5;
+}
+
+/* Caption text */
+.captions {
+  color: var(--primary-font-color);
+  font-size: 15px;
+  padding: 8px 12px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.number-text {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .grid-container {
@@ -386,108 +500,26 @@ CSS you must add the (.) in order to pull up the specific (class). */
   font-size: 30px;
 }
 
-.about-blurb {
-  background-color: var(--primary-background);
-  color: var(--primary-font-color);
-  padding: 10px;
-  margin: auto;
-  width: 90%;
-  border-radius: 5px;
-}
-
 .cv-container {
+  display: flex;
   margin: 10px;
-}
-
-.animated-svg {
-  margin-top: 10px;
-}
-
-svg {
-  border: 5px solid var(--secondary-color);
-  border-radius: 5px;
-  padding: 0;
-}
-
-/* Here we have Animation @keyframe rules */
-@keyframes color-change {
-  /* color-change is the name of the animation which is used to target a specific element. */
-  0% {
-    fill: #edc655;
-  }
-
-  50% {
-    fill: #fcffad; /* This animation is being used to effect the sun on the about page. the (class) [].sun] has already been added to the SVG image in the example. */
-  }
-
-  100% {
-    fill: #f76414;
-  }
-}
-
-.sun {
-  animation: 4s color-change infinite alternate linear;
-}
-
-/* Longer format for the .sun animation:
-.sun {
-  animation-duration: 4s;
-  animation-name: color-change;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-  animation-timing-function: linear;
-}
-*/
-
-@keyframes cloud-move {
-  from {
-    transform: translate(100px, 10px);
-  }
-
-  to {
-    transform: translate(0, 10px);
-  }
-}
-
-.cloud-front {
-  animation: 20s cloud-move infinite alternate linear;
-}
-
-@keyframes cloud-move-reverse {
-  from {
-    transform: translate(-30px, 10px);
-  }
-
-  to {
-    transform: translate(89px, 10px);
-  }
-}
-
-.cloud-back {
-  animation: 10s cloud-move-reverse infinite alternate linear;
-}
-
-.hometown-picture {
-  width: 80%;
-  height: auto;
-  text-align: center;
+  justify-content: center;
 }
 
 /* ------ Contact Page ------ */
 
-.contact-title {
-  text-align: center;
-  padding-top: 30px;
-}
-
 /* Contact Form */
 
 .contact-container {
-  border-radius: 5px;
-  background-color: var(--secondary-color);
-  margin: 10px;
-  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
+  margin: 10px;
+}
+
+.contact-card {
+  padding: 4rem 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 input[type='text'],
@@ -532,18 +564,20 @@ label {
 
 .contact-btn {
   width: 45%;
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--primary-font-color);
   padding: 12px 20px;
   border: none;
   border-radius: 4px;
   text-decoration: none;
   cursor: pointer;
-  margin: 1rem;
+  margin: 0;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-btn:hover {
-  background-color: #45a049;
+  opacity: 0.6;
 }
 
 .email-input {
@@ -573,19 +607,22 @@ label {
 }
 
 .additional-contact {
-  background-color: var(--secondary-color);
-  margin: 3rem;
+  background-color: var(--primary-background);
+  margin: 8%;
   padding: 10px;
   border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.contact-text {
+  font-size: 18px;
+}
 /* ------ Projects Page ------ */
 
 .project-container {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  background-color: var(--secondary-color);
-  padding-bottom: 20px;
-  border-radius: 4px;
   margin: 10px;
 }
 
@@ -623,9 +660,9 @@ label {
 
 .grid > div {
   width: auto;
-  background-color: var(--primary-background);
   padding: 10px;
   border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* Longer way to code this:
@@ -645,11 +682,6 @@ img.profile_portrait.rotate-picture {
 }
 
 /* ------ cruebeeflix ------ */
-.main-content {
-  display: block;
-  text-align: center;
-  margin-top: 10px;
-}
 
 @media screen and (min-height: 870px) {
   .profile-hello {
@@ -671,7 +703,7 @@ img.profile_portrait.rotate-picture {
   }
 
   .profile__portrait {
-    margin-top: 2rem;
+    margin: 1rem;
   }
 }
 

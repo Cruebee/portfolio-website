@@ -29,25 +29,39 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
 
-    <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="dist/css/style.production.css"
-    />
+    /> -->
   </head>
 
   <body>
     <header>
       <div id="navbar" data-toggle="collapse">
         <nav class="top-nav" id="my-topnav">
+          <a
+            class="logo-link"
+            href="index.html"
+            role="menu-image"
+            target="_self"
+          >
+            <img
+              src="./img/crue_logo_new.svg"
+              alt="crue logo"
+              height="48"
+              width=""
+            />
+          </a>
           <a href="index.html" role="menuitem" target="_self" class="active"
             >Home
           </a>
           <a href="about.html" role="menuitem" target="_self">About Crue</a>
           <a href="work.html" role="menuitem" target="_self">Crue's Projects</a>
           <a href="contact.html" role="menuitem" target="_self">Contact Crue</a>
+
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -56,68 +70,46 @@
       </div>
     </header>
 
-    <div class="content">
+    <div class="main-content">
       <div class="main-title">
         <h1 class="crue-title">
-          Eric <span class="crue-span">Crue</span> Jameson
+          <!-- The extra < before the <span></span> tags is intentional by design
+            I want this displayed as "text" on the page, so it reads: <Crue Jameson /> -->
+          <span class="crue-span">Crue</span> Jameson
         </h1>
+        <h2 class="subtitle-crue">
+          <span class="crue-span">Web</span> Developer, home-grown in
+          <span class="crue-span">Colorado</span>
+        </h2>
       </div>
 
-      <div class="profile">
-        <img
-          src="img/crue_portrait.jpeg"
-          class="profile__portrait rotate-picture"
-          alt="A picture of the developer, Eric Gerlach"
-        />
-
-        <h1 class="profile-hello">
-          Welcome! My name is <span class="crue-span">Crue</span> Jameson.
-        </h1>
-        <p class="profile-text">
-          I am a new web designer and developer from Colorado. I'm thrilled
-          you've decided to look over my portfolio, and I would like to thank
-          you for taking the time to browse my site. Enjoy and happy browsing!
-        </p>
-        <a
-          href="https://github.com/Cruebee?tab=repositories"
-          class="button"
-          target="_blank"
-          >Check out some of my code!</a
-        >
+      <div class="index-foot__wrap">
+        <div class="foot-wrap">
+          <footer class="page-footer">
+            <p>Find Me On</p>
+            <div class="social-media">
+              <a href="https://github.com/Cruebee" target="_blank"
+                ><img src="img/github_icon.svg" alt="Github"
+              /></a>
+              <a href="https://twitter.com/cruebee" target="_blank"
+                ><img src="img/twitter_icon.svg" alt="Twitter"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
+                target="_blank"
+                ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+              /></a>
+              <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
+                ><img src="img/instagram_icon.svg" alt="Instagram"
+              /></a>
+            </div>
+          </footer>
+        </div>
       </div>
-    </div>
-    <div class="index-spacer__bottom"></div>
-
-    <div class="index-foot__wrap">
-      <div class="foot-wrap">
-        <footer class="page-footer">
-          <p>Find Me On</p>
-          <div class="social-media">
-            <a href="https://github.com/Cruebee" target="_blank"
-              ><img src="img/github_icon.svg" alt="Github"
-            /></a>
-            <a href="https://twitter.com/cruebee" target="_blank"
-              ><img src="img/twitter_icon.svg" alt="Twitter"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
-              target="_blank"
-              ><img src="img/linkedin_icon.svg" alt="LinkedIn"
-            /></a>
-            <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
-              ><img src="img/instagram_icon.svg" alt="Instagram"
-            /></a>
-          </div>
-        </footer>
-      </div>
-    </div>
-
-    <div class="logo-container">
-      <img src="img/crue_logo.svg" class="app-logo" alt="Crue Jameson" />
     </div>
 
     <script src="src/js/navhide.js"></script>
     <script src="src/js/burgermenu.js"></script>
-    <!-- <script src="src/js/tota11y.min.js"></script> -->
+    <script src="src/js/tota11y.min.js"></script>
   </body>
 </html>

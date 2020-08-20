@@ -24,18 +24,26 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" /> -->
-    <link
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="dist/css/style.production.css"
-    />
+    /> -->
   </head>
 
   <body>
     <header>
       <div id="navbar" data-toggle="collapse">
         <nav class="top-nav" id="my-topnav">
+          <a
+            class="logo-link"
+            href="index.html"
+            role="menu-image"
+            target="_self"
+          >
+            <img src="./img/crue_logo_new.svg" alt="crue logo" height="48" />
+          </a>
           <a href="index.html" role="menuitem" target="_self">Home</a>
           <a href="about.html" role="menuitem" target="_self">About Crue</a>
           <a href="work.html" role="menuitem" target="_self">Crue's Projects</a>
@@ -50,97 +58,103 @@
       </div>
     </header>
 
-    <section class="contact-me content">
+    <section class="content">
       <div class="contact-container">
-        <h1 class="main-title">Contact Me</h1>
-        <form method="post" action="contact.php" class="contact-form">
-          <div class="row">
-            <div class="col-form_label">
-              <label class="contact-label" for="full-name">
-                <span class="required-field">*</span>Your Name
-              </label>
+        <h1 class="secondary-title">
+          Contact <span class="crue-span">Crue</span>
+        </h1>
+        <div class="contact-card">
+          <form method="post" action="contact.php" class="contact-form">
+            <div class="row">
+              <div class="col-form_label">
+                <label class="contact-label" for="full-name">
+                  <span class="required-field">*</span>Your Name
+                </label>
+              </div>
+              <div class="col-form_input">
+                <input
+                  required
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Full name"
+                />
+              </div>
             </div>
-            <div class="col-form_input">
-              <input
-                required
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Full name"
-              />
+            <div class="row">
+              <div class="col-form_label">
+                <label class="contact-label" for="email"
+                  ><span class="required-field">*</span>Email
+                </label>
+              </div>
+              <div class="col-form_input">
+                <input
+                  required
+                  class="email-input"
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="Your e-mail"
+                />
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-form_label">
-              <label class="contact-label" for="email"
-                ><span class="required-field">*</span>Email
-              </label>
+            <div class="row">
+              <div class="col-form_label">
+                <label class="contact-label" for="subject"
+                  ><span class="required-field">*</span>Subject
+                </label>
+              </div>
+              <div class="col-form_input">
+                <input
+                  required
+                  type="text"
+                  id="subject"
+                  name="subject"
+                  placeholder="Subject"
+                />
+              </div>
             </div>
-            <div class="col-form_input">
-              <input
-                required
-                class="email-input"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Your e-mail"
-              />
+            <div class="row">
+              <div class="col-form_label">
+                <label class="contact-label" for="message">
+                  <span class="required-field">*</span>Send me a message!
+                </label>
+              </div>
+              <div class="col-form_input">
+                <textarea
+                  name="message"
+                  id="message"
+                  style="height: 200px;"
+                  maxlenght="350"
+                  placeholder="Type your message here..."
+                ></textarea>
+              </div>
             </div>
-          </div>
-          <div class="row">
-            <div class="col-form_label">
-              <label class="contact-label" for="subject"
-                ><span class="required-field">*</span>Subject
-              </label>
+            <div class="row">
+              <div class="submit-container">
+                <button class="contact-btn" type="submit" name="submit">
+                  Submit
+                </button>
+                <br />
+                <span style="font-size: 18px;" class="required-field"
+                  >* Indicates a required field.</span
+                >
+              </div>
             </div>
-            <div class="col-form_input">
-              <input
-                required
-                type="text"
-                id="subject"
-                name="subject"
-                placeholder="Subject"
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-form_label">
-              <label class="contact-label" for="message">
-                <span class="required-field">*</span>Send me a message!
-              </label>
-            </div>
-            <div class="col-form_input">
-              <textarea
-                name="message"
-                id="message"
-                style="height: 200px;"
-                maxlenght="350"
-                placeholder="Type your message here..."
-              ></textarea>
-            </div>
-          </div>
-          <div class="row">
-            <div class="submit-container">
-              <button class="contact-btn" type="submit" name="submit">
-                Submit
-              </button>
-              <br />
-              <span style="font-size: 18px;" class="required-field"
-                >* Indicates a required field.</span
-              >
-            </div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
 
     <section class="additional-contact">
       <div class="contact-info">
-        <h1>Other ways to reach me</h1>
-        Crue Jameson<br />
-        2215 N. Overland Trl.<br />
-        80521<br />
-        USA<br />
+        <h1>Let's <span class="crue-span">Connect</span>!</h1>
+        <div class="contact-text">
+          Crue Jameson<br />
+          2215 N. Overland Trl.<br />
+          80521<br />
+          USA<br />
+        </div>
         <a href="tel:+1-970-980-8519" class="button connection"
           >Tel: (970)-980-8519</a
         >
