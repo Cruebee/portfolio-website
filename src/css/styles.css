@@ -1,19 +1,13 @@
 /*
 Colors Used:
-Teal: #0292B7;
-Turquoise: #1AC8DB;
-Taupe: #8C756A;
-Misty Blue: #DEE2EC;
 Black: #000;
 ErrorRed: #8b0000;
+Taupe: #8c756a;
+Purple: #625779;
 
-Ocean: #022444;
-Orange: #f27d42;
-Lightblue: #55bdca;
-Sky: #96fff;
-Mist: #c8eff4;
 Ivory: #FFFFF0;
 OliveDrab: #737c00;
+Orange: #dd8e5a;
 */
 
 /* CSS variables */
@@ -25,8 +19,8 @@ OliveDrab: #737c00;
   --button-text-primary: #8c756a;
   --secondary-color: #737c00;
   --secondary-font-size: 16px;
-  --visited-link: #f27d42;
-  --active-link: #0292b7;
+  --visited-link: #dd8e5a;
+  --unopened-link: #000;
   --dark-grey: #2b2b2b;
   --error-color: #8b0000;
   --grid-background-color: #8c756a;
@@ -34,6 +28,7 @@ OliveDrab: #737c00;
   --button-background: #737c00;
   --white: #fffff0;
   --black: #000;
+  --link-font-size: 20px;
 }
 
 /* This forces Box model into including padding and border
@@ -87,8 +82,8 @@ h3 {
 
 /* LINKS */
 a {
-  color: var(--active-link);
-  font-size: var(--primary-font-size);
+  color: var(--unopened-link);
+  font-size: var(--link-font-size);
 }
 
 a:visited {
@@ -107,8 +102,8 @@ a:hover,
 a:focus {
   /* No underlining when hovering over a link */
   text-decoration: none;
-  opacity: 0.5;
-  transition: 0.9s opacity;
+  color: var(--primary-color);
+  transition: 0.2s;
 }
 
 a:active {
@@ -123,9 +118,12 @@ a:active {
 
 /* ------ Image container for project pages ------ */
 .app-image {
+  display: flex;
+  align-self: center;
   max-width: 35rem;
-  margin-bottom: 10px;
+  margin: 2rem;
   border-radius: 4px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* BUTTONS */
@@ -368,7 +366,6 @@ CSS you must add the (.) in order to pull up the specific (class). */
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
   position: static;
   margin: 1%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -654,7 +651,7 @@ label {
   grid-template-rows: 1fr 1fr;
 
   /* grid-template-row: default is auto so you don't even need to add it, grid will add for you. */
-  grid-gap: 20px; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
+  grid-gap: 2rem; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
   margin: 0 1rem;
 }
 
