@@ -12,6 +12,7 @@
 
 			if(mail($to, $subject, $message, $headers)){
 				echo "<h1>Message Sent! Thank you, I will contact you shortly!</h1>";
+				header('location:thank-you.html');
 			}
 			else{
 				echo "Something Went Wrong!";
