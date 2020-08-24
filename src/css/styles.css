@@ -341,6 +341,10 @@ CSS you must add the (.) in order to pull up the specific (class). */
   border-radius: 4px;
 }
 
+.social-media a:hover {
+  opacity: 0.5;
+}
+
 /* ------ ABOUT PAGE ------ */
 
 .about {
