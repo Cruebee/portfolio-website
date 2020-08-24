@@ -29,7 +29,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="dist/css/style.production.css"
+      href="dist/css/styles_version2.0.css"
     />
   </head>
 
@@ -65,7 +65,11 @@
           Contact <span class="crue-span">Crue</span>
         </h1>
         <div class="contact-card">
-          <form method="post" action="mail-handler.php" class="contact-form">
+          <form
+            method="post"
+            action="/src/php/mail-handler.php"
+            class="contact-form"
+          >
             <div class="row">
               <div class="col-form_label">
                 <label class="contact-label" for="full-name">
@@ -195,8 +199,11 @@
       </footer>
     </div>
 
-    <script src="src/js/navhide.js"></script>
     <script src="src/js/burgermenu.js"></script>
+    <!-- 
+      ** Hide navhide.js until ios scroll up issue resolved **
+      <script src="src/js/navhide.js"></script> 
+    -->
     <!-- <script src="src/js/tota11y.min.js"></script> -->
   </body>
 </html>
