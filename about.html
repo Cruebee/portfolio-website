@@ -24,13 +24,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="dist/css/styles_version2.0.css"
-    />
+    /> -->
   </head>
 
   <body>
@@ -69,92 +69,120 @@
         <h1 class="secondary-title">
           About <span class="crue-span">Crue</span>
         </h1>
-        <div class="about-blurb">
-          <img
-            src="img/crue_portrait.jpeg"
-            class="profile__portrait rotate-picture"
-            alt="A picture of the developer, Eric Gerlach"
-          />
+        <div class="">
           <p class="about-blurb-text">
-            I'm a pretty simple guy, who takes on every challenge with stride. I
+            <img
+              src="img/crue_portrait.jpeg"
+              class="profile__portrait rotate-picture"
+              alt="A picture of the developer, Eric Gerlach"
+            />
+
+            I'm the kind of person, who takes on every challenge with stride. I
             aim to please and I work as hard as I can every day to make sure
             that each task I take on is dealt with to the very best of my
             abilities. Whether I'm on the archery range, in the office coding,
-            or just having fun with my dogs, my goal is to be the best at what
-            I'm doing, no matter what.
+            just having fun with my dogs, or exploring the world with my wife,
+            my goal is to be the best at what I do.
             <br />
-            Coming from the construction industry I'm not scared of hard work.
+            Coming from the construction industry I'm no stranger to hard work.
             I'm always looking for the next challenge and I don't give up on
             difficult projects. What I don't know, I'll learn. What I'm not good
             at I'll practice. Humans are resilient beings, there is nothing we
-            can't accomplish together. We are all equal, we all depend on this
-            planet for life, let's work together.
+            can't accomplish together. We are all in this world together, and
+            today more than ever, it is vital that we all work as one to produce
+            the best future we can, as one big world-team.
           </p>
         </div>
       </section>
 
-      <!-- slideshow container -->
-      <div class="slideshow-container">
-        <!-- images with number and caption (full width indicated with css classes) -->
-        <div class="about-slides fade">
-          <div class="number-text">1 / 6</div>
-          <img src="img/archery_1.jpeg" class="about-me__images" />
-          <div class="captions">Archery</div>
-        </div>
+      <div class="center-slides">
+        <!-- slideshow container -->
+        <div class="slideshow-container">
+          <!-- images with number and caption (full width indicated with css classes) -->
 
-        <div class="about-slides fade">
-          <div class="number-text">2 / 6</div>
-          <img src="img/hiking.jpeg" class="about-me__images" />
-          <div class="captions">Hiking</div>
-        </div>
+          <div class="about-slides fade">
+            <img src="img/about_archery2.png" class="about-me__images" />
+            <div class="captions">Archery</div>
+          </div>
 
-        <div class="about-slides fade">
-          <div class="number-text">3 / 6</div>
-          <img src="img/coding.jpeg" class="about-me__images" />
-          <div class="captions">Coding</div>
-        </div>
+          <div class="about-slides fade">
+            <img src="img/about_archery1.png" class="about-me__images" />
+            <div class="captions">Archery</div>
+          </div>
 
-        <div class="about-slides fade">
-          <div class="number-text">4 / 6</div>
-          <img src="img/camping.jpg" class="about-me__images" />
-          <div class="captions">Camping</div>
-        </div>
+          <div class="about-slides fade">
+            <img src="img/about_hiking.png" class="about-me__images" />
+            <div class="captions">Hiking</div>
+          </div>
 
-        <div class="about-slides fade">
-          <div class="number-text">5 / 6</div>
-          <img src="img/hunting_2.jpg" class="about-me__images" />
-          <div class="captions">Hunting</div>
-        </div>
+          <div class="about-slides fade">
+            <img src="img/about_coding.png" class="about-me__images" />
+            <div class="captions">Coding</div>
+          </div>
 
-        <div class="about-slides fade">
-          <div class="number-text">6 / 6</div>
-          <img src="img/fishing.jpg" class="about-me__images" />
-          <div class="captions">Fishing</div>
-        </div>
+          <div class="about-slides fade">
+            <img src="img/about_camping.png" class="about-me__images" />
+            <div class="captions">Camping</div>
+          </div>
 
-        <!-- next and previous buttons -->
-        <div class="slide-btn-container">
-          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-          <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        </div>
+          <div class="about-slides fade">
+            <img src="img/about_hunting.png" class="about-me__images" />
+            <div class="captions">Hunting</div>
+          </div>
 
-        <div class="logo-container">
-          <img src="img/crue_logo.svg" class="app-logo" alt="Crue Jameson" />
+          <div class="about-slides fade">
+            <img src="img/about_fishing.png" class="about-me__images" />
+            <div class="captions">Fishing</div>
+          </div>
+
+          <!-- next and previous buttons -->
+          <div class="slide-btn-container">
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <div class="logo-container">
+            <img src="img/crue_logo.svg" class="app-logo" alt="Crue Jameson" />
+          </div>
+
+          <br />
+          <!-- dots and circles indicating slide position -->
+          <div class="dot-circles">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+          </div>
         </div>
       </div>
-      <br />
-      <!-- dots and circles indicating slide position -->
-      <div class="dot-circles">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
-      </div>
+
+      <section class="about">
+        <div class="about-blurb">
+          <p>
+            When I found archery, much like when I first started coding, I was
+            hooked immediately. When I'm not at the desk working on my code, and
+            creating projects, I'm on the archery range. I've been training for
+            my first archery season this 2020, and I couldn't be more excited to
+            be forging so many paths at the same time. I've always had a passion
+            for the outdoors and I'm hoping to spend more time exploring my
+            passions. My wife and 100% equal partner in this life caught the
+            travel bug years ago, and ever since our lives are filled with
+            adventrue and trips to exciting places. Our home is filled with dogs
+            and cats, and I couldn't ask for a better life. The only thing I
+            could possibly want more of, is time with my wife, our dogs and
+            cats, and time to travel and explore this crazy amazing world before
+            it's gone.
+          </p>
+        </div>
+      </section>
 
       <div class="cv-container">
-        <a href="files/cv.pdf" class="button" download>Download my CV</a>
+        <a href="files/resume.pdf" class="button" download target="_blank">
+          Download My Resume
+        </a>
       </div>
 
       <div class="foot-wrap">

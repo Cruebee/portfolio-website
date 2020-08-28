@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chatter-Box | Cruebee</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-crue.svg"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Icon library for hamburger menu icon for small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      type="text/css"
+      href="dist/css/styles_version2.0.css"
+    /> -->
+  </head>
+
+  <body>
+    <header>
+      <div id="navbar" data-toggle="collapse">
+        <nav class="top-nav" id="my-topnav">
+          <a
+            class="logo-link"
+            href="index.html"
+            role="menu-image"
+            target="_self"
+          >
+            <img
+              src="./img/crue_logo_new.svg"
+              alt="crue logo"
+              height="48"
+              width=""
+            />
+          </a>
+          <a href="index.html" role="menuitem" target="_self">Home</a>
+          <a href="about.html" role="menuitem" target="_self">About Crue</a>
+          <a href="work.html" role="menuitem" target="_self">Crue's Projects</a>
+          <a href="contact.html" role="menuitem" target="_self">Contact Crue</a>
+          <a href="work.html" role="menuitem" target="_self" class="active"
+            >Back to Projects
+          </a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <!-- link with class="icon" used to open/close navbar on small screens -->
+        </nav>
+      </div>
+    </header>
+
+    <div class="project-content">
+      <main class="project-container">
+        <h1 class="secondary-title">
+          Chatter-<span class="crue-span">Box</span>
+        </h1>
+        <h2 class="tech-label">
+          React-Native
+          <span class="tech-span">|</span> CSS
+          <span class="tech-span">|</span> React-Navigation
+          <span class="tech-span">|</span> Firestore
+          <span class="tech-span">|</span> Expo
+          <span class="tech-span">|</span> JavaScript
+          <span class="tech-span">|</span> GiftedChat
+          <span class="tech-span">|</span> JSDocs
+        </h2>
+        <p>
+          <a
+            href="chatterbox_demo.html"
+            target="_self"
+            aria-label="See the app in action!"
+            >See the app in action!</a
+          >
+          |
+          <a
+            href="https://github.com/Cruebee/native-chat"
+            target="_blank"
+            aria-label="View the code on GitHub"
+            >GitHub</a
+          >
+        </p>
+
+        <img
+          class="app-image"
+          src="img/chatPics4.png"
+          alt="chatter-box photo array"
+        />
+
+        <div class="grid-1">
+          <div class="grid-1__item">
+            <h2 class="project-title-left">
+              The Challenge
+            </h2>
+            <p class="proj-desc-left">
+              Let's say you are a person who likes to travel and share picutres
+              and locations with your friends and family. You want an
+              application that you can customize and send, take, and view new
+              photos anywhere you go!You trael all over the world and some of
+              the places life takes you don't have the best wifi! A friend you
+              know in a village sent you directions, but you don't have a signal
+              anywhere! Chatter-Box is here to lend a hand at this problem by
+              providing a platform to share events and locations with friends
+              and family, and have access to your messages offline. For when
+              your adventures take you a little further off grid!
+            </p>
+          </div>
+          <div class="grid-1_img__item">
+            <img
+              style="width: 100%;"
+              src="img/chatPics5.png"
+              alt="chatter-box"
+            />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="grid-2_img__item">
+            <img
+              style="width: 100%;"
+              src="img/chatPics1.png"
+              alt="chatter-box"
+            />
+          </div>
+          <div class="grid-2__item">
+            <h2 class="project-title-left">
+              Tech Stack Explanation
+            </h2>
+            <p class="proj-desc-left">
+              I chose to use React-Native to complete this project because it
+              was the ideal tool to create a hand-held chat application that you
+              could use on the go, and offline. I incorporated Expo into the
+              project because of the access to its wide variety of built-in
+              APIs. React-Navigation helps build the content of the pages, and
+              Firestore is the backbone of the project, storing and sending user
+              messages real-time.
+            </p>
+          </div>
+        </div>
+
+        <div class="grid-1">
+          <div class="grid-1__item">
+            <h2 class="project-title-left">
+              The Process
+            </h2>
+            <p class="proj-desc-left">
+              Chatter-Box was built up with an emphasis on collaboration, and
+              referencing project assets was of vital importance. The goal was
+              to bring the "client" a product as close to their visual design as
+              possible. Throughout the development process both wireframes and
+              user stories drove the creation of this React-Native chat app.
+              Thorough testing and a major focus on detailed documentation
+              helped further increase the collaborative feel and goals of this
+              project. As the setup for this project was quite detailed and
+              complex, a highly detailed README.md was created along with
+              documentation created with JSDocs.
+            </p>
+          </div>
+          <div class="grid-1_img__item">
+            <img style="width: 100%;" src="" alt="chat wireframes" />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="grid-2_img__item">
+            <img
+              style="width: 100%;"
+              src="img/chatPics3.png"
+              alt="chatter-box"
+            />
+          </div>
+
+          <div class="grid-2__item">
+            <h2 class="project-title-left">
+              Lessons Learned
+            </h2>
+            <p class="proj-desc-left">
+              This project was a long lesson in patience and determination.
+              Initially I began this project thinking that it would be a very
+              simple task to accomplish in a short period of time. Rushing is
+              never a solution to any situation, no matter how dire. I learned
+              that when you rush, you sacrifice quality, and quality will beat
+              out quantity when it comes to user experience every day of the
+              week. Learning how to navigate the seemingly daily changing world
+              of React-Native was a task well worth taking on considering all
+              the lessons learned.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="foot-wrap">
+      <footer class="page-footer">
+        <p>Find Me On</p>
+        <div class="social-media">
+          <a href="https://github.com/Cruebee" target="_blank"
+            ><img src="img/github_icon.svg" alt="Github"
+          /></a>
+          <a href="https://twitter.com/cruebee" target="_blank"
+            ><img src="img/twitter_icon.svg" alt="Twitter"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/crue-jameson-a8bb0219a/"
+            target="_blank"
+            ><img src="img/linkedin_icon.svg" alt="LinkedIn"
+          /></a>
+          <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
+            ><img src="img/instagram_icon.svg" alt="Instagram"
+          /></a>
+        </div>
+      </footer>
+    </div>
+
+    <script src="src/js/burgermenu.js"></script>
+    <!-- 
+      ** Hide navhide.js until ios scroll up issue resolved **
+      <script src="src/js/navhide.js"></script> 
+    -->
+    <!-- <script src="src/js/tota11y.min.js"></script> -->
+  </body>
+</html>

@@ -15,8 +15,8 @@ Orange: #dd8e5a;
   --primary-color: #737c00;
   --primary-background: #fffff0;
   --primary-font-color: #000;
-  --primary-font-size: 18px;
-  --button-text-primary: #8c756a;
+  --primary-font-size: 23px;
+  --button-text-primary: #fffff0;
   --secondary-color: #737c00;
   --secondary-font-size: 16px;
   --visited-link: #dd8e5a;
@@ -28,6 +28,8 @@ Orange: #dd8e5a;
   --button-background: #737c00;
   --white: #fffff0;
   --black: #000;
+  --purple: #625779;
+  --orange: #dd8e5a;
   --link-font-size: 20px;
 }
 
@@ -49,7 +51,7 @@ body {
   will be used if Lato can't be used. */
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: var(--secondary-font-size);
+  font-size: var(--primary-font-size);
   line-height: 1.6;
   background-color: var(--primary-background);
   color: var(--primary-font-color);
@@ -57,7 +59,7 @@ body {
 }
 
 p {
-  font-size: var(--secondary-font-size);
+  font-size: var(--primary-font-size);
   padding: 1rem;
   margin: 1rem;
 }
@@ -122,7 +124,7 @@ a:active {
   align-self: center;
   max-width: 35rem;
   margin: 2rem;
-  border-radius: 4px;
+  border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -136,16 +138,17 @@ button,
   /* takes the font from the outer container */
   display: inline-block;
   font-family: inherit;
+  font-size: 20px;
 
   /* styles the background color, font color,
    and text decoration (underline, etc.) of the button */
   background-color: var(--button-background);
-  color: var(--button-text-primary);
+  color: var(--primary-background);
   text-decoration: none;
 
   /* adds spacing to the button (this will be discussed more in-depth later) */
   padding: 10px;
-  border-radius: 3px;
+  border-radius: 10px;
 
   /* gives the button a bottom border with a width of 2px,
   a type of solid, and a color in RGBA format */
@@ -221,10 +224,10 @@ a.button:hover {
 .profile__portrait {
   float: left;
   width: 100%; /* Height and Width can be expressed in multiple ways including % (80%) which can be useful when coding for multiple platforms. This is not limited to px and %. */
-  max-width: 325px; /* Combined with (width: 100%;) this allows the image to take up 100% of the width of smaller screens and allowing the image to be larger/but no larger than the 325px allotted */
+  max-width: 500px; /* Combined with (width: 100%;) this allows the image to take up 100% of the width of smaller screens and allowing the image to be larger/but no larger than the 325px allotted */
   height: auto; /* By setting the height to auto the aspect ratio remains true (no squished/stretched images) */
   margin-right: 40px;
-  border-radius: 50%;
+  border-radius: 10px;
 }
 
 .main-content {
@@ -243,6 +246,13 @@ a.button:hover {
 
 .crue-span {
   color: var(--secondary-color);
+  font-weight: 700;
+}
+
+.tech-span {
+  color: var(--secondary-color);
+  font-weight: 700;
+  font-size: 30px;
 }
 
 .index-spacer {
@@ -271,7 +281,7 @@ a.button:hover {
   padding: 18px 16px;
   text-decoration: none;
   font-size: 17px;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 a.logo-link {
@@ -338,7 +348,7 @@ CSS you must add the (.) in order to pull up the specific (class). */
 
 .foot-wrap {
   padding-bottom: 10px;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 .social-media a:hover {
@@ -358,23 +368,39 @@ CSS you must add the (.) in order to pull up the specific (class). */
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 2%;
+  text-align: left;
+  font-size: 20px;
+}
+
+.about-blurb-text {
+  float: right;
+  text-align: left;
 }
 
 .about-me__images {
   width: 100%;
+  max-height: 350px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .dot-circles {
   text-align: center;
 }
 
+.center-slides {
+  display: flex;
+  justify-content: center;
+}
+
 /* Slideshow container */
 .slideshow-container {
-  position: static;
-  margin: 1%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  justify-content: center;
+  text-align: center;
+  max-width: 850px;
+  margin: 2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 2%;
-  border-radius: 4px;
+  border-radius: 10px;
 }
 
 /* Hide the images by default */
@@ -395,10 +421,10 @@ CSS you must add the (.) in order to pull up the specific (class). */
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
-  border-radius: 4px;
+  border-radius: 10px;
   user-select: none;
   text-shadow: 3px 3px var(--black);
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .slide-btn-container {
@@ -419,15 +445,6 @@ CSS you must add the (.) in order to pull up the specific (class). */
   padding: 8px 12px;
   width: 100%;
   text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.number-text {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -483,7 +500,7 @@ CSS you must add the (.) in order to pull up the specific (class). */
   margin-top: 10px;
   margin-bottom: 10px;
   width: 90%;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .item-1 {
@@ -520,7 +537,8 @@ CSS you must add the (.) in order to pull up the specific (class). */
 
 .contact-card {
   padding: 4rem 1rem;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
 }
 
 input[type='text'],
@@ -529,7 +547,7 @@ textarea {
   width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   resize: vertical;
 }
 
@@ -539,7 +557,7 @@ textarea {
   width: 50%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   resize: vertical;
 }
 
@@ -569,12 +587,12 @@ label {
   color: var(--primary-font-color);
   padding: 12px 20px;
   border: none;
-  border-radius: 4px;
+  border-radius: 10px;
   text-decoration: none;
   cursor: pointer;
   margin: 0;
   text-align: center;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-btn:hover {
@@ -585,7 +603,7 @@ label {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 10px;
   resize: vertical;
 }
 
@@ -611,8 +629,8 @@ label {
   background-color: var(--primary-background);
   margin: 8%;
   padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-text {
@@ -624,11 +642,25 @@ label {
   display: flex;
   flex-direction: column;
   text-align: center;
+  align-items: center;
   margin: 10px;
 }
+.project-title-left {
+  text-align: left;
+  font-size: 40px;
+}
 
-.proj-desc {
+.project-title-right {
+  text-align: right;
+}
+
+.proj-desc-right {
+  text-align: right;
   height: 45%;
+}
+
+.proj-desc-left {
+  text-align: left;
 }
 
 .projects {
@@ -639,33 +671,112 @@ label {
   height: 45%;
 }
 
+.project-logo {
+  text-align: center;
+  width: 10rem;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+/* ---- Project Demos ---- */
+.chat-demo__container {
+  text-align: center;
+  justify-content: center;
+  margin: 2%;
+  height: 100%;
+}
+
+.video1 {
+  height: 90vh;
+  width: 90vw;
+  border-radius: 30px;
+}
+
+.video-btn {
+  height: 55px;
+  background-color: var(--primary-color);
+  color: var(--primary-background);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* Grid fallback */
-.grid__item {
+.grid-1__item {
   display: inline-block;
+  justify-content: center;
   width: 33%;
   border-radius: 4px;
 }
 
+.grid-1_img__item {
+  display: inline-block;
+  align-self: center;
+  width: 33%;
+  border-radius: 10px;
+}
+
+.grid-1_text__item {
+  display: inline-block;
+  align-self: center;
+  width: 33%;
+}
+
+.grid-2__item {
+  display: inline-block;
+  justify-content: center;
+  width: 33%;
+  border-radius: 4px;
+}
+
+.grid-2_img__item {
+  display: inline-block;
+  align-self: center;
+  width: 33%;
+  border-radius: 10px;
+}
 /* Styling CSS Grid */
 
 /* The following is an example of a Grid layout. */
-.grid {
+.grid-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 0.5fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
 
   /* grid-template-row: default is auto so you don't even need to add it, grid will add for you. */
   grid-gap: 2rem; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
   margin: 0 1rem;
 }
 
-.grid > div {
+.grid-1 > div {
   width: auto;
   padding: 10px;
-  border-radius: 4px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+.grid-1_img__item {
+  width: auto;
+  background-image: linear-gradient(var(--purple), var(--primary-background));
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
+
+  /* grid-template-row: default is auto so you don't even need to add it, grid will add for you. */
+  grid-gap: 2rem; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
+  margin: 0 1rem;
+}
+
+.grid-2 > div {
+  width: auto;
+  padding: 10px;
+}
+
+.grid-2_img__item {
+  width: auto;
+  background-image: linear-gradient(var(--orange), var(--primary-background));
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 /* Longer way to code this:
   .grid__item:last-child {
     grid-column-start: 3;
@@ -675,11 +786,41 @@ label {
   }
   */
 
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+  margin: 0 1rem;
+  height: 100%;
+}
+
+.about-grid > div {
+  width: auto;
+  padding: 10px;
+}
+
+.grid-text__item {
+  width: auto;
+  border-radius: 10px;
+}
+
 /* Media Queries all go at the end of CSS as the
 last rule in CSS is the winner. If you have a new
 rule following media query, it will not be used. */
 img.profile_portrait.rotate-picture {
   clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+  .proj-desc-right,
+  .proj-desc-left,
+  .project-title-right,
+  .project-title-left {
+    text-align: center;
+  }
 }
 
 /* ------ cruebeeflix ------ */
@@ -760,7 +901,7 @@ img.profile_portrait.rotate-picture {
 @media screen and (max-width: 600px) {
   img.profile_portrait,
   .rotate-picture {
-    margin: 0;
+    margin: 0.4rem;
     text-align: center;
     justify-content: center;
   }
@@ -807,19 +948,6 @@ img.profile_portrait.rotate-picture {
 @media screen and (max-width: 600px) {
   .project-content {
     margin-top: 4rem;
-  }
-}
-
-/* ------ work page mediaquery ------- */
-@media all and (min-width: 500px) and (max-width: 1024px) {
-  .grid {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media all and (max-width: 500px) {
-  .grid {
-    grid-template-columns: 1fr;
   }
 }
 

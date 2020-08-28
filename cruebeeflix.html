@@ -24,13 +24,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="dist/css/styles_version2.0.css"
-    />
+    /> -->
   </head>
 
   <body>
@@ -68,6 +68,18 @@
     <div class="project-content">
       <main class="project-container">
         <h1 class="secondary-title">my<span class="crue-span">Flix</span></h1>
+        <h2 class="tech-label">
+          MongoDB
+          <span class="tech-span">|</span> Express
+          <span class="tech-span">|</span> React
+          <span class="tech-span">|</span> Node.js
+          <span class="tech-span">|</span> Redux
+          <span class="tech-span">|</span> JSX
+          <span class="tech-span">|</span> SCSS
+          <span class="tech-span">|</span> Parcel
+          <span class="tech-span">|</span> JavaScript
+          <span class="tech-span">|</span> Bootstrap
+        </h2>
         <p>
           <a
             href="https://cruebeeflix.herokuapp.com/client"
@@ -101,43 +113,114 @@
           (please note myFlix takes a nap when not in use. If it takes longer
           than 30 seconds to load please try again.)
         </p>
-        <div class="grid">
-          <div class="grid__item">
-            <h2>Objective</h2>
-            <p>
-              Explore React by creating the server-side and client-side for a
-              single page application with multiple user views.
+
+        <!-- grid-1, grid-1__item, and grid-1_img__item 
+            this grid and its items will align the main
+            title and text to the left of the screen,
+            while placing the project image to the right. 
+          -->
+        <div class="grid-1">
+          <div class="grid-1__item">
+            <h2 class="project-title-left">
+              The Challenge
+            </h2>
+            <p class="proj-desc-left">
+              The myFlix web application was created for movie buffs! myFlix is
+              a scalable web application that provides users with a place to
+              login and browse a selection of movies. Users can add movies to a
+              favorites list, remove movies from the list they don't like, link
+              to director pages, with information about the directors of their
+              favorite movies.
             </p>
           </div>
-          <div class="grid__item">
-            <h2>Description</h2>
-            <p>
-              This app is all about movies, the directors behind them, and some
-              additional information about the movie, director, and the genre of
-              that movie. It features routing, complex user interaction, and
-              several interfaceable views.
+          <div class="grid-1_img__item">
+            <img
+              style="width: 100%;"
+              src="img/my-registration.jpeg"
+              alt="myFlix"
+            />
+          </div>
+        </div>
+
+        <!-- grid-2, grid-2__item, and grid-2_img__item
+            this grid and its items will align the main
+            title and text to the right of the screen,
+            while placing the project image to the left.
+          -->
+        <div class="grid-2">
+          <div class="grid-2_img__item">
+            <img
+              style="width: 100%;"
+              src="img/my-favorites.jpeg"
+              alt="myFlix Favorites menu"
+            />
+          </div>
+          <div class="grid-2__item">
+            <h2 class="project-title-left">
+              Tech Stack Explanation
+            </h2>
+            <p class="proj-desc-left">
+              I chose React due to the user interaction that this application
+              was going to need to handle. Users were going to be clicking and
+              changing views, inputs, and user data, so React was the obvious
+              choice here. With the help of Parcel, Node.js, Express, and
+              MongoDB, React was the most capable, while offering up a lot of
+              freedom. The MERN stack offers a powerful method for setting up
+              front-to-back end projects in a relatively short period of time.
+              React's modular nature with its components make it easy to reuse
+              components and features which saves time, and makes it highly
+              scalable.
             </p>
           </div>
-          <div class="grid__item">
-            <h2>Technologies</h2>
-            <ul class="app-ul">
-              <li>MongoDB</li>
-              <li>Node.js</li>
-              <li>Express</li>
-              <li>React</li>
-              <li>React Redux</li>
-              <li>Bootstrap</li>
-            </ul>
+        </div>
+
+        <div class="grid-1">
+          <div class="grid-1__item">
+            <h2 class="project-title-left">
+              The Process
+            </h2>
+            <p class="proj-desc-left">
+              Creating the myFlix application was an enjoyable experience. User
+              stories are converted into sketched wireframes, and are based on
+              project assets provided. These wireframes act as a guide where
+              coding concepts are visualized before being implemented.
+              Visualizing a requirement of an application provides a better
+              understanding of the process required to implement features.
+              Wireframes also provide a great way to flesh out any desired user
+              experience (UX) features and their functionality.
+            </p>
           </div>
-          <div class="grid__item">
-            <h2>Process</h2>
-            <ul class="app-ul">
-              <li>User Stories</li>
-              <li>Sketch Wireframing</li>
-              <li>Prototyping</li>
-              <li>Research/Testing</li>
-              <li>Review/Clean-up</li>
-            </ul>
+          <div class="grid-1_img__item">
+            <img
+              style="width: 100%;"
+              src="img/my-wireframe.jpeg"
+              alt="myFlix wireframes"
+            />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="grid-2_img__item">
+            <img
+              style="width: 100%;"
+              src="img/my-main.jpeg"
+              alt="myFlix mainView"
+            />
+          </div>
+          <div class="grid-2__item">
+            <h2 class="project-title-left">
+              Lessons Learned
+            </h2>
+            <p class="proj-desc-left">
+              I learned a lot about both backend and frontend programming while
+              creating myFlix. I enjoy the structured nature of both SQL and
+              NoSQL databases and really grew to appreciate the importance of
+              good API documentation. Even when a project is using its own
+              backend to feed the project it is always important to remember you
+              won't be the last and only person to work on a project, so knowing
+              what your endpoints do, and expect when they get requests was a
+              vital lesson for this project.
+            </p>
           </div>
         </div>
       </main>

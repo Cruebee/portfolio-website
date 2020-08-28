@@ -24,13 +24,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" -->
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="dist/css/styles_version2.0.css"
-    />
+    /> -->
   </head>
 
   <body>
@@ -68,12 +68,19 @@
     <div class="project-content">
       <main class="project-container">
         <h1 class="secondary-title">Poke-<span class="crue-span">dex</span></h1>
+        <h2 class="tech-label">
+          HTML
+          <span class="tech-span">|</span> CSS
+          <span class="tech-span">|</span> JavaScript
+          <span class="tech-span">|</span> jQuery
+          <span class="tech-span">|</span> Bootstrap
+        </h2>
         <p>
           <a
             href="https://cruebee.github.io/jQuery-poke-tracker/"
             target="_blank"
-            aria-label="Check out the quiz app"
-            >Check out the Pokedex app!</a
+            aria-label="Check out the poke-dex app!"
+            >Check out the Poke-Dex app!</a
           >
           |
           <a
@@ -85,48 +92,90 @@
         </p>
         <img
           class="app-image"
-          src="img/pokedex-1.jpeg"
-          alt="Quiztron app screenshot"
+          src="img/poke-main.jpeg"
+          alt="poke-dex launch img"
         />
-        <div class="grid">
-          <div class="grid__item">
-            <h2>Objective</h2>
-            <p>
-              Explore advanced JavaScript concepts. Introduction to jQuery,
-              AJAX, and API interaction. Grasp importance of good documentation
-              and methods for reading and understanding documentation.
+
+        <div class="grid-1">
+          <div class="grid-1__item">
+            <h2 class="project-title-left">
+              The Challenge
+            </h2>
+            <p class="proj-desc-left">
+              Poke-Dex was designed as a learning project so I could learn the
+              ins and outs of JavaScript, and DOM interaction. The project also
+              served as an introduction to libraries and honed some HTML and CSS
+              skills at the same time. This project was a stepping stone to
+              begin working on larger projects with more functionality.
             </p>
           </div>
-          <div class="grid__item">
-            <h2>Description</h2>
-            <p>
-              The Pokedex app is a simple JavaScript application that interacts
-              with an external API. The application pulls information from the
-              API and displays the information based on user input. Users can
-              search for specific characters, and display additional details
-              about them with a click of a button. The application is built with
-              HTML, CSS, JavaScript, jQuery, and Bootstrap.
+          <div class="grid-1_img__item">
+            <img style="width: 100%;" src="img/poke-main.jpeg" alt="poke-dex" />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="grid-2_img__item">
+            <img
+              style="width: 100%;"
+              src="img/poke-modal.jpeg"
+              alt="poke-dex modal img"
+            />
+          </div>
+          <div class="grid-2__item">
+            <h2 class="project-title-left">
+              Tech Stack Explanation
+            </h2>
+            <p class="proj-desc-left">
+              HTML, CSS, and JavaScript, along with jQuery and libraries are the
+              backbone and foundation of most of modern web development. So what
+              better way to incorporate some of the most fundemental elements of
+              web development into a single project. Using minimal external
+              libraries gives the site a fast load time, and good response times
+              despite a large JavaScript file.
             </p>
           </div>
-          <div class="grid__item">
-            <h2>Technologies used</h2>
-            <ul class="app-ul">
-              <li>HTML5</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>jQuery</li>
-              <li>Bootstrap</li>
-            </ul>
+        </div>
+
+        <div class="grid-1">
+          <div class="grid-1__item">
+            <h2 class="project-title-left">
+              The Process
+            </h2>
+            <p class="proj-desc-left">
+              This web application was first visualized through user stories.
+              These user stories were then turned into sketched wireframes,
+              which provide a more concrete visual concept for the final
+              product. Once the wireframes are in place, programming begins, and
+              each added element and function are tested multiple times before
+              production.
+            </p>
           </div>
-          <div class="grid__item">
-            <h2>Process</h2>
-            <ul class="app-ul">
-              <li>User Stories</li>
-              <li>Sketch Wireframing</li>
-              <li>Prototyping</li>
-              <li>Research/Testing</li>
-              <li>Review/Clean-up</li>
-            </ul>
+          <div class="grid-1_img__item">
+            <img style="width: 100%;" src="" alt="poke-wireframes" />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="grid-2_img__item">
+            <img
+              style="width: 100%;"
+              src="img/poke-footer.jpeg"
+              alt="poke-dex footer img"
+            />
+          </div>
+          <div class="grid-2__item">
+            <h2 class="project-title-left">
+              Lessons Learned
+            </h2>
+            <p class="proj-desc-left">
+              This project taught me a lot about patience, and API interaction.
+              Before this task was set upon me, I only had a tenuous grasp of
+              HTML, CSS, and JavaScript. I didn't know the first thing about
+              making calls to APIs or how to iterate over data pulled from them.
+              All the same this simple project paved the pathway leading to more
+              advanced concepts and future projects that are far more exciting!
+            </p>
           </div>
         </div>
       </main>
@@ -152,10 +201,6 @@
           /></a>
         </div>
       </footer>
-    </div>
-
-    <div class="logo-container">
-      <img src="img/crue_logo.svg" class="app-logo" alt="Crue Jameson" />
     </div>
 
     <script src="src/js/burgermenu.js"></script>

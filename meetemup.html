@@ -25,13 +25,13 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-    <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="src/css/styles.css" />
 
-    <link
+    <!-- <link
       rel="stylesheet"
       type="text/css"
       href="dist/css/styles_version2.0.css"
-    />
+    /> -->
   </head>
 
   <body>
@@ -71,6 +71,14 @@
         <h1 class="secondary-title">
           meet-<span class="crue-span">em</span>-up
         </h1>
+        <h2 class="tech-label">
+          React
+          <span class="tech-span">|</span> CSS
+          <span class="tech-span">|</span> JavaScript
+          <span class="tech-span">|</span> OAuth2
+          <span class="tech-span">|</span> Jest
+          <span class="tech-span">|</span> Serverless Programming
+        </h2>
         <p>
           <a
             href="https://cruebee.github.io/meetemup/"
@@ -89,42 +97,103 @@
         <img
           class="app-image"
           src="img/meetemup.png"
-          alt="Memberberry app screenshot"
+          alt="Meet-Em-Up screenShot"
         />
-        <div class="grid">
-          <div class="grid__item">
-            <h2>Objective</h2>
-            <p>
-              Create a basic meetup application using OAuth to allow users to
-              login and authorize API use.
+
+        <div class="grid-1">
+          <div class="grid-1__item">
+            <h2 class="project-title-left">
+              The Challenge
+            </h2>
+            <p class="proj-desc-left">
+              Meet-Em-Up was designed to bring people together in an ever
+              changing world. Today, technology has been bringing people closer
+              together than ever before. In the recent past, technology was seen
+              as a hastle and just another stressful addition to life in
+              general. Now with COVID-19 technology and human connection is even
+              more important than it ever was. Meet-Em-Up brings the user closer
+              to the way things used to be, but digitally. Search Meet-Em-Up for
+              groups meeting in your area, whether that be online, or in an
+              outdoor/social-distance setting. Get back to normal. Get out there
+              and Meet-Em-Up!
             </p>
           </div>
-          <div class="grid__item">
-            <h2>Description</h2>
-            <p>
-              A simple meetup progressive web application where users can search
-              for meetup events in various cities.
+          <div class="grid-1_img__item">
+            <img style="width: 100%;" src="" alt="Meet-Em-Up Searching" />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="grid-2_img__item">
+            <img style="width: 100%;" src="" alt="meet-em-up img" />
+          </div>
+          <div class="grid-2__item">
+            <h2 class="project-title-left">
+              Tech Stack Explanation
+            </h2>
+            <p class="proj-desc-left">
+              This project was another, where React was the perfect candidate to
+              complete the task. Since React is so flexible with its components
+              features it was an easy choice to make when picking a set of build
+              tools. Reusable components made creating this progressive web app
+              move a little more smoothly. Use of Meetup's powerful API and
+              Amazon Web Services made programming serverless functions to
+              authenticate user's a breeze, while providing users with a quick
+              and easy way to login and get meeting people faster! Whats even
+              better, is that the use of AWS and React allow users to download
+              the application directly to their device, and use the application
+              offline! In a tunnel on your way to your meetup without service?
+              No problem! The meetups viewed last are saved locally, and since
+              users can download the app to their device, they won't need a
+              connection to get their app open and find their way to that
+              meetup!
             </p>
           </div>
-          <div class="grid__item">
-            <h2>Technologies used</h2>
-            <ul class="app-ul">
-              <li>React</li>
-              <li>HTML</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Serverless Programming</li>
-            </ul>
+        </div>
+
+        <div class="grid-1">
+          <div class="grid-1__item">
+            <h2 class="project-title-left">
+              The Process
+            </h2>
+            <p class="proj-desc-left">
+              As with most of my projects the process starts out with some user
+              stories. I like to try and get a feel for what a user might want
+              out of an application. From there we move into some basic sketched
+              wireframes where I layout some of the basic structures that I'd
+              like to see on the screen. Where available, references to project
+              assets are used to compare design templates, and getting more
+              concrete design concepts locked in place. After code is
+              implemented, a thorough testing phase is conducted, however with
+              this particular project, testing was conducted throughout the
+              project using TDD and BDD mindsets. All testing was conducted both
+              before and after code was implemented, resulting in more than a
+              90% test coverage rate!
+            </p>
           </div>
-          <div class="grid__item">
-            <h2>Process</h2>
-            <ul class="app-ul">
-              <li>User Stories</li>
-              <li>Sketch Wireframing</li>
-              <li>Prototyping</li>
-              <li>Research/Testing</li>
-              <li>Review/Clean-up</li>
-            </ul>
+          <div class="grid-1_img__item">
+            <img style="width: 100%;" src="" alt="Meet-Em-Up user stories" />
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="grid-2_img__item">
+            <img style="width: 100%;" src="" alt="meet-em-up img" />
+          </div>
+          <div class="grid-2__item">
+            <h2 class="project-title-left">
+              Lessons Learned
+            </h2>
+            <p class="proj-desc-left">
+              I learned so much from this project in terms of coding best
+              practices, and the importance of testing. This project was
+              developed with both a TDD and BDD mindset. At first for a new
+              coder, this task seemed quite daunting, however, the experience
+              helped me grow as a developer, and as a person in general. The
+              patience required to think ahead of the code you need to write is
+              a skill worth developing, and well worth taking the time to
+              continue to expand on.
+            </p>
           </div>
         </div>
       </main>
@@ -150,10 +219,6 @@
           /></a>
         </div>
       </footer>
-    </div>
-
-    <div class="logo-container">
-      <img src="img/crue_logo.svg" class="app-logo" alt="Crue Jameson" />
     </div>
 
     <script src="src/js/burgermenu.js"></script>

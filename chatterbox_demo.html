@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Chat-Demo | Cruebee</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-crue.svg"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Load Icon library for hamburger menu icon for small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link rel="stylesheet" type="text/css" href="src/css/styles.css" /> -->
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="dist/css/styles_version2.0.css"
+    />
+  </head>
+  <body style="background-color: #000;">
+
+    <div class="chat-center">
+      <div class="chat-demo__container">
+        <video id="video1" class="video1">
+          <source src="video/ChatterBox-V2.mp4" type="video/mp4" />
+        </video>
+        <br />
+        <button class="video-btn" onClick="playPause()">Play/Pause</button>
+        <a href="chatterbox.html" target="_self" class="button">
+          Return To Project Details
+        </a>
+      </div>
+
+    <script src="src/js/videoPlayer.js"></script>
+    <script src="src/js/burgermenu.js"></script>
+    <!-- 
+      ** Hide navhide.js until ios scroll up issue resolved **
+      <script src="src/js/navhide.js"></script> 
+    -->
+    <!-- <script src="src/js/tota11y.min.js"></script> -->
+  </body>
+</html>
