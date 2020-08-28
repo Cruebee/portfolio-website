@@ -647,7 +647,7 @@ label {
 }
 .project-title-left {
   text-align: left;
-  font-size: 40px;
+  font-size: 60px;
 }
 
 .project-title-right {
@@ -742,7 +742,7 @@ label {
 
   /* grid-template-row: default is auto so you don't even need to add it, grid will add for you. */
   grid-gap: 2rem; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
-  margin: 0 1rem;
+  margin: 1rem;
 }
 
 .grid-1 > div {
@@ -812,14 +812,20 @@ img.profile_portrait.rotate-picture {
 }
 
 @media screen and (max-width: 600px) {
-  .grid {
+  .grid-1 {
     grid-template-columns: 1fr;
   }
-  .proj-desc-right,
+
   .proj-desc-left,
   .project-title-right,
   .project-title-left {
     text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
   }
 }
 
