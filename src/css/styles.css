@@ -738,7 +738,7 @@ label {
 /* The following is an example of a Grid layout. */
 .grid-1 {
   display: grid;
-  grid-template-columns: 1fr 0.5fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
+  grid-template-columns: 1fr 1fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
 
   /* grid-template-row: default is auto so you don't even need to add it, grid will add for you. */
   grid-gap: 2rem; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
@@ -759,7 +759,7 @@ label {
 
 .grid-2 {
   display: grid;
-  grid-template-columns: 0.5fr 1fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
+  grid-template-columns: 1fr 1fr; /*  (1fr 1fr 1fr) (fr) stands for fraction and is a flex unit replacing the original (300px 300px 300px) value, you can use this because each grid item should be the same size. (fr) allows the columns to grow and shring within the page. Each section is spaced based on the other. If you wanted one column to be twice the size of the original you pass on the trait 2fr */
 
   /* grid-template-row: default is auto so you don't even need to add it, grid will add for you. */
   grid-gap: 2rem; /* Puts spacing between the grid items like margin would do by using (grid-gap) */
