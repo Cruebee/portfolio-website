@@ -735,6 +735,26 @@ label {
 }
 /* Styling CSS Grid */
 
+.single-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+  margin: 1rem;
+  margin-bottom: 2rem;
+}
+
+.single-grid > div {
+  width: auto;
+  padding: 10px;
+}
+
+.single-grid__img {
+  width: auto;
+  background-image: linear-gradient(var(--purple), var(--primary-background));
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 /* The following is an example of a Grid layout. */
 .grid-1 {
   display: grid;
