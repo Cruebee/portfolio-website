@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Contact Crue</title>
+    <title>Contact Me</title>
     <link
       rel="icon"
       type="image/png"
@@ -29,7 +29,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="dist/css/styles_version2.2.css"
+      href="dist/css/styles_version2.3.css"
     />
   </head>
 
@@ -45,12 +45,11 @@
           >
             <img src="./img/crue_logo_new.svg" alt="crue logo" height="48" />
           </a>
-          <a href="index.html" role="menuitem" target="_self">Home</a>
-          <a href="about.html" role="menuitem" target="_self">About Crue</a>
-          <a href="work.html" role="menuitem" target="_self">Crue's Projects</a>
           <a href="contact.html" role="menuitem" target="_self" class="active"
-            >Contact Crue
+            >Contact Me
           </a>
+          <a href="work.html" role="menuitem" target="_self">My Projects</a>
+          <a href="about.html" role="menuitem" target="_self">About me</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -62,7 +61,7 @@
     <section class="content">
       <div class="contact-container">
         <h1 class="secondary-title">
-          Contact <span class="crue-span">Crue</span>
+          Contact <span class="crue-span">Me</span>
         </h1>
         <div class="contact-card">
           <form
@@ -78,6 +77,8 @@
               </div>
               <div class="col-form_input">
                 <input
+                  pattern=".{2,}"
+                  maxlenght="30"
                   required
                   type="text"
                   id="name"
@@ -85,6 +86,9 @@
                   placeholder="Full name"
                 />
               </div>
+              <small class="min-labels"
+                >(min 3 characters, max 30 characters)</small
+              >
             </div>
             <div class="row">
               <div class="col-form_label">
@@ -94,6 +98,8 @@
               </div>
               <div class="col-form_input">
                 <input
+                  pattern=".{5,}"
+                  maxlength="20"
                   required
                   class="email-input"
                   type="email"
@@ -102,6 +108,9 @@
                   placeholder="Your e-mail"
                 />
               </div>
+              <small class="min-labels"
+                >(min 5 characters, max 20 characters)</small
+              >
             </div>
             <div class="row">
               <div class="col-form_label">
@@ -111,6 +120,8 @@
               </div>
               <div class="col-form_input">
                 <input
+                  pattern=".{4,}"
+                  maxlength="50"
                   required
                   type="text"
                   id="subject"
@@ -118,6 +129,9 @@
                   placeholder="Subject"
                 />
               </div>
+              <small class="min-labels"
+                >(min 4 characters, max 50 characters)</small
+              >
             </div>
             <div class="row">
               <div class="col-form_label">
@@ -127,6 +141,7 @@
               </div>
               <div class="col-form_input">
                 <textarea
+                  minlength="5"
                   name="message"
                   id="message"
                   style="height: 200px;"
@@ -134,6 +149,9 @@
                   placeholder="Type your message here..."
                 ></textarea>
               </div>
+              <small class="min-labels"
+                >(min 5 characters, max 350 characters)</small
+              >
             </div>
             <div class="row">
               <div class="submit-container">
@@ -153,29 +171,23 @@
 
     <section class="additional-contact">
       <div class="contact-info">
-        <h1>Let's <span class="crue-span">Connect</span>!</h1>
+        <h1><span class="crue-span">Let's</span> Connect!</h1>
         <div class="contact-text">
-          Crue Jameson<br />
-          2215 N. Overland Trl.<br />
-          80521<br />
-          USA<br />
+          <p>
+            Location: Fort Collins, CO | United States
+          </p>
           <a href="mailto:ericcjameson@gmail.com">
             Email: ericcjameson@gmail.com
           </a>
           <br />
-          Phone: (970)-980-8519<br />
-          <a href="https://medium.com/@ericcjameson">
-            Medium
-          </a>
-          <br />
-          <a href="https://twitter.com/cruejameson">
-            Twitter
-          </a>
+          <p>
+            Phone: (970)-980-8519
+          </p>
         </div>
 
         <div class="cv-container">
-          <a href="files/resume.pdf" class="button" download target="_blank">
-            Download My Resume
+          <a href="files/resume.pdf" class="button" target="_blank">
+            My Resume
           </a>
         </div>
       </div>
@@ -204,6 +216,9 @@
           /></a>
           <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
             ><img src="img/instagram_icon.svg" alt="Instagram"
+          /></a>
+          <a href="https://www.medium.com/@ericcjameson" target="_blank"
+            ><img src="img/medium_icon.svg" alt="medium.com"
           /></a>
         </div>
       </footer>

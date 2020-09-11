@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>meetemup</title>
+    <title>Meet-Em-Up | Cruebee</title>
     <!-- Is the following code the most effective way to add in a favicon downloaded from the internet? -->
     <link
       rel="icon"
@@ -30,7 +30,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="dist/css/styles_version2.2.css"
+      href="dist/css/styles_version2.3.css"
     />
   </head>
 
@@ -51,13 +51,9 @@
               width=""
             />
           </a>
-          <a href="index.html" role="menuitem" target="_self">Home</a>
-          <a href="about.html" role="menuitem" target="_self">About Crue</a>
-          <a href="work.html" role="menuitem" target="_self">Crue's Projects</a>
-          <a href="contact.html" role="menuitem" target="_self">Contact Crue</a>
-          <a href="work.html" role="menuitem" target="_self" class="active"
-            >Back to Projects
-          </a>
+          <a href="contact.html" role="menuitem" target="_self">Contact Me</a>
+          <a href="work.html" role="menuitem" target="_self">My Projects</a>
+          <a href="about.html" role="menuitem" target="_self">About Me</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -69,7 +65,7 @@
     <div class="project-content">
       <main class="project-container">
         <h1 class="secondary-title">
-          meet-<span class="crue-span">em</span>-up
+          <span class="crue-span">Meet</span>-Em-Up
         </h1>
         <h2 class="tech-label">
           React
@@ -84,7 +80,7 @@
             href="https://cruebee.github.io/meetemup/"
             target="_blank"
             aria-label="Check out the meetemup app"
-            >Check out the meetemup app</a
+            >Check out the Meet-Em-Up app</a
           >
           |
           <a
@@ -106,16 +102,15 @@
               The Challenge
             </h2>
             <p class="proj-desc-left">
-              Meet-Em-Up was designed to bring people together in an ever
-              changing world. Today, technology has been bringing people closer
-              together than ever before. In the recent past, technology was seen
-              as a hastle and just another stressful addition to life in
-              general. Now with COVID-19 technology and human connection is even
-              more important than it ever was. Meet-Em-Up brings the user closer
-              to the way things used to be, but digitally. Search Meet-Em-Up for
-              groups meeting in your area, whether that be online, or in an
-              outdoor/social-distance setting. Get back to normal. Get out there
-              and Meet-Em-Up!
+              Meet-Em-Up was designed to bring people together in an
+              ever-changing world. Today, with the introduction of the novel
+              Coronavirus, human connections and technology are more important
+              than ever. Meet-Em-Up hopes to bring people closer to the way life
+              used to be, just digitally. Users can search Meet-Em-Up for groups
+              meeting in their area, whether that be online, or in an
+              outdoor/socially-distanced setting. Meet-Em-Up hopes to help you
+              start getting back to normal and start getting out there to
+              Meet-Em-Up!
             </p>
           </div>
           <div class="grid-1_img__item">
@@ -140,21 +135,15 @@
               Tech Stack Explanation
             </h2>
             <p class="proj-desc-left">
-              This project was another, where React was the perfect candidate to
-              complete the task. Since React is so flexible with its components
-              features it was an easy choice to make when picking a set of build
-              tools. Reusable components made creating this progressive web app
-              move a little more smoothly. Use of Meetup's powerful API and
-              Amazon Web Services made programming serverless functions to
-              authenticate user's a breeze, while providing users with a quick
-              and easy way to login and get meeting people faster! Whats even
-              better, is that the use of AWS and React allow users to download
-              the application directly to their device, and use the application
-              offline! In a tunnel on your way to your meetup without service?
-              No problem! The meetups viewed last are saved locally, and since
-              users can download the app to their device, they won't need a
-              connection to get their app open and find their way to that
-              meetup!
+              For this progressive web app, React made choosing a set of build
+              tools simple. Its reusable components and the use of Meetup's API
+              accelerated the development process, while Amazon Web Services
+              provided the perfect platform for serverless functions. The use of
+              OAuth2 provided users with a quick login process without the need
+              to create an account. Should a user ever lose their internet
+              connection, the last events viewed are saved to their device.
+              Since the app can be downloaded directly to a device, an internet
+              connection isn't necessary to find a way to that meetup.
             </p>
           </div>
         </div>
@@ -165,18 +154,15 @@
               The Process
             </h2>
             <p class="proj-desc-left">
-              As with most of my projects the process starts out with some user
-              stories. I like to try and get a feel for what a user might want
-              out of an application. From there we move into some basic sketched
-              wireframes where I layout some of the basic structures that I'd
-              like to see on the screen. Where available, references to project
-              assets are used to compare design templates, and getting more
-              concrete design concepts locked in place. After code is
-              implemented, a thorough testing phase is conducted, however with
-              this particular project, testing was conducted throughout the
-              project using TDD and BDD mindsets. All testing was conducted both
-              before and after code was implemented, resulting in more than a
-              90% test coverage rate!
+              As with most projects, the process started with user stories,
+              which were used to flesh out what users might want out of an
+              application. User stories were then converted into sketched
+              wireframes where basic structures were laid out. Where available,
+              project assets were used to compare design templates and develop
+              more concrete designs. With this particular project, testing was
+              performed throughout the project using TDD and BDD mindsets.
+              Testing was conducted before, during, and after code
+              implementation, resulting in more than a 90% test coverage rate.
             </p>
           </div>
           <div class="grid-1_img__item">
@@ -192,7 +178,7 @@
           <div class="single-grid__img">
             <img
               style="width: 100%; margin-top: 0.5rem;"
-              src="img/meet-group.svg"
+              src="img/meet-group.png"
             />
           </div>
         </div>
@@ -211,13 +197,12 @@
             </h2>
             <p class="proj-desc-left">
               I learned so much from this project in terms of coding best
-              practices, and the importance of testing. This project was
-              developed with both a TDD and BDD mindset. At first for a new
-              coder, this task seemed quite daunting, however, the experience
-              helped me grow as a developer, and as a person in general. The
-              patience required to think ahead of the code you need to write is
-              a skill worth developing, and well worth taking the time to
-              continue to expand on.
+              practices and the importance of testing. As this project was
+              developed with a TDD and BDD mindset, at first, for a new coder,
+              this task seemed quite daunting. However, the experience allowed
+              me to grow both as a developer and a person. I found that the
+              patience required to think ahead of the code that needs to be
+              written is a skill worth continuing to develop.
             </p>
           </div>
         </div>
@@ -241,6 +226,9 @@
           /></a>
           <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
             ><img src="img/instagram_icon.svg" alt="Instagram"
+          /></a>
+          <a href="https://www.medium.com/@ericcjameson" target="_blank"
+            ><img src="img/medium_icon.svg" alt="medium.com"
           /></a>
         </div>
       </footer>

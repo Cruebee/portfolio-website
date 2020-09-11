@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Crue</title>
+    <title>About Me</title>
     <link
       rel="icon"
       type="image/png"
@@ -29,7 +29,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="dist/css/styles_version2.2.css"
+      href="dist/css/styles_version2.3.css"
     />
   </head>
 
@@ -50,12 +50,28 @@
               width=""
             />
           </a>
-          <a href="index.html" role="menuitem" target="_self">Home</a>
-          <a href="about.html" role="menuitem" target="_self" class="active"
-            >About Crue
+          <a
+            href="contact.html"
+            role="menuitem"
+            target="_self"
+            aria-label="Contact Me"
+            >Contact Me</a
+          >
+          <a
+            href="work.html"
+            role="menuitem"
+            target="_self"
+            aria-label="My Projects"
+            >My Projects</a
+          >
+          <a
+            href="about.html"
+            role="menuitem"
+            target="_self"
+            aria-label="About Me"
+            class="active"
+            >About Me
           </a>
-          <a href="work.html" role="menuitem" target="_self">Crue's Projects</a>
-          <a href="contact.html" role="menuitem" target="_self">Contact Crue</a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -66,33 +82,32 @@
 
     <div class="content">
       <section class="about">
-        <h1 class="secondary-title">
-          About <span class="crue-span">Crue</span>
-        </h1>
-        <div class="">
-          <p class="about-blurb-text">
-            <img
-              src="img/crue_portrait.jpeg"
-              class="profile__portrait rotate-picture"
-              alt="A picture of the developer, Eric Gerlach"
-            />
+        <h1 class="secondary-title"><span class="crue-span">About</span> Me</h1>
 
-            I'm the kind of person, who takes on every challenge with stride. I
-            aim to please and I work as hard as I can every day to make sure
-            that each task I take on is dealt with to the very best of my
-            abilities. Whether I'm on the archery range, in the office coding,
-            just having fun with my dogs, or exploring the world with my wife,
-            my goal is to be the best at what I do.
-            <br />
-            Coming from the construction industry I'm no stranger to hard work.
-            I'm always looking for the next challenge and I don't give up on
-            difficult projects. What I don't know, I'll learn. What I'm not good
-            at I'll practice. Humans are resilient beings, there is nothing we
-            can't accomplish together. We are all in this world together, and
-            today more than ever, it is vital that we all work as one to produce
-            the best future we can, as one big world-team.
-          </p>
+        <div class="about-pic">
+          <img
+            src="img/test-face.jpeg"
+            class="profile__portrait rotate-picture"
+            alt="A picture of the developer, Eric Gerlach"
+          />
         </div>
+
+        <p class="about-blurb-text">
+          Hi, I'm Crue,
+          <br />
+          I'm an archer, husband, world traveler, creator, developer, pet owner,
+          and ally. I aim to please and I work as hard as I can every day to
+          make sure that each task I take on is dealt with to the best of my
+          abilities. Whether I'm on the archery range, in the office coding,
+          exploring the world with my wife, or just having fun with my dogs, my
+          goal is to fill my life with as much excitement as possible. I find
+          that life is too short to not fill it with as many dogs, cats, and
+          adventures as possible. Right now I'm embarking on my newest
+          experience, as a web developer. So if you're in the market for a new
+          developer, let's start a new adventure together!
+          <a href="mailto:ericcjameson@gmail.com">Contact Me</a>
+          <br />
+        </p>
       </section>
 
       <div class="center-slides">
@@ -140,11 +155,6 @@
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
             <a class="next" onclick="plusSlides(1)">&#10095;</a>
           </div>
-
-          <div class="logo-container">
-            <img src="img/crue_logo.svg" class="app-logo" alt="Crue Jameson" />
-          </div>
-
           <br />
           <!-- dots and circles indicating slide position -->
           <div class="dot-circles">
@@ -157,32 +167,6 @@
             <span class="dot" onclick="currentSlide(7)"></span>
           </div>
         </div>
-      </div>
-
-      <section class="about">
-        <div class="about-blurb">
-          <p>
-            When I found archery, much like when I first started coding, I was
-            hooked immediately. When I'm not at the desk working on my code, and
-            creating projects, I'm on the archery range. I've been training for
-            my first archery season this 2020, and I couldn't be more excited to
-            be forging so many paths at the same time. I've always had a passion
-            for the outdoors and I'm hoping to spend more time exploring my
-            passions. My wife and 100% equal partner in this life caught the
-            travel bug years ago, and ever since our lives are filled with
-            adventrue and trips to exciting places. Our home is filled with dogs
-            and cats, and I couldn't ask for a better life. The only thing I
-            could possibly want more of, is time with my wife, our dogs and
-            cats, and time to travel and explore this crazy amazing world before
-            it's gone.
-          </p>
-        </div>
-      </section>
-
-      <div class="cv-container">
-        <a href="files/resume.pdf" class="button" download target="_blank">
-          Download My Resume
-        </a>
       </div>
 
       <div class="foot-wrap">
@@ -202,6 +186,9 @@
             /></a>
             <a href="https://www.instagram.com/cruebeedoobie/" target="_blank"
               ><img src="img/instagram_icon.svg" alt="Instagram"
+            /></a>
+            <a href="https://www.medium.com/@ericcjameson" target="_blank"
+              ><img src="img/medium_icon.svg" alt="medium.com"
             /></a>
           </div>
         </footer>

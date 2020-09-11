@@ -30,7 +30,7 @@ Orange: #dd8e5a;
   --black: #000;
   --purple: #625779;
   --orange: #dd8e5a;
-  --link-font-size: 20px;
+  --link-font-size: 23px;
 }
 
 /* This forces Box model into including padding and border
@@ -226,7 +226,6 @@ a.button:hover {
   width: 100%; /* Height and Width can be expressed in multiple ways including % (80%) which can be useful when coding for multiple platforms. This is not limited to px and %. */
   max-width: 500px; /* Combined with (width: 100%;) this allows the image to take up 100% of the width of smaller screens and allowing the image to be larger/but no larger than the 325px allotted */
   height: auto; /* By setting the height to auto the aspect ratio remains true (no squished/stretched images) */
-  margin-right: 40px;
   border-radius: 10px;
 }
 
@@ -242,6 +241,7 @@ a.button:hover {
 .crue-title {
   font-size: 12vw;
   margin: auto;
+  margin-top: 2rem;
 }
 
 .crue-span {
@@ -281,11 +281,13 @@ a.button:hover {
   padding: 18px 16px;
   text-decoration: none;
   font-size: 17px;
-  border-radius: 5px;
 }
 
 a.logo-link {
-  padding: 4px 0;
+  padding-top: 7px;
+  padding-right: 7px;
+  padding-left: 6px;
+  padding-bottom: 1px;
   float: left;
 }
 
@@ -300,7 +302,7 @@ a.logo-link {
 }
 
 a.logo-link:hover {
-  background-color: var(--primary-background);
+  background-color: var(--primary-color);
 }
 
 .top-nav .icon {
@@ -364,6 +366,11 @@ CSS you must add the (.) in order to pull up the specific (class). */
   margin: 10px;
 }
 
+.about-pic {
+  display: flex;
+  justify-content: center;
+}
+
 .about-blurb {
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -398,7 +405,6 @@ CSS you must add the (.) in order to pull up the specific (class). */
   text-align: center;
   max-width: 850px;
   margin: 2%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 2%;
   border-radius: 10px;
 }
@@ -450,8 +456,8 @@ CSS you must add the (.) in order to pull up the specific (class). */
 /* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
-  height: 15px;
-  width: 15px;
+  height: 5px;
+  width: 5px;
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
@@ -536,7 +542,7 @@ CSS you must add the (.) in order to pull up the specific (class). */
 }
 
 .contact-card {
-  padding: 4rem 1rem;
+  padding: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 10px;
 }
@@ -575,6 +581,10 @@ label {
 
 label {
   clear: all;
+}
+
+.min-labels {
+  font-size: 14px;
 }
 
 .submit-container {
@@ -627,10 +637,9 @@ label {
 
 .additional-contact {
   background-color: var(--primary-background);
-  margin: 8%;
+  margin: 2%;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact-text {
@@ -911,7 +920,6 @@ img.profile_portrait.rotate-picture {
 /* ----- index mediaquery ----- */
 @media screen and (max-width: 600px) {
   .crue-title {
-    font-size: 40px;
     margin: 1rem;
   }
 }
