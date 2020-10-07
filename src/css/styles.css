@@ -56,6 +56,7 @@ body {
   background-color: var(--primary-background);
   color: var(--primary-font-color);
   height: 100%;
+  width: 100%;
 }
 
 p {
@@ -200,6 +201,7 @@ a.button:hover {
 /* Main Title, and Secondary Titles */
 .main-title {
   text-align: center;
+  width: 100%;
 }
 
 .secondary-title {
@@ -240,8 +242,13 @@ a.button:hover {
 
 .crue-title {
   font-size: 12vw;
+  width: 100%;
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 12rem;
+}
+
+.subtitle-crue {
+  font-size: 120%;
 }
 
 .crue-span {
@@ -797,7 +804,7 @@ label {
 
 .grid-2 > div {
   width: auto;
-  padding: 10px;
+  padding: 0;
 }
 
 .grid-2_img__item {
@@ -918,9 +925,61 @@ img.profile_portrait.rotate-picture {
 }
 
 /* ----- index mediaquery ----- */
+
 @media screen and (max-width: 600px) {
   .crue-title {
-    margin: 1rem;
+    margin-top: 4rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .subtitle-crue {
+    font-size: 100%;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .crue-title {
+    font-size: 12vw;
+    margin-top: 11rem;
+  }
+}
+
+@media screen and (min-width: 1590px) {
+  .crue-title {
+    font-size: 11vw;
+    margin-top: 12rem;
+  }
+}
+
+@media screen and (min-width: 1731px) {
+  .crue-title {
+    font-size: 10vw;
+    margin-top: 12rem;
+  }
+}
+
+@media screen and (min-width: 1901px) {
+  .crue-title {
+    font-size: 9vw;
+  }
+}
+
+@media screen and (min-width: 2111px) {
+  .crue-title {
+    font-size: 8vw;
+  }
+}
+
+@media screen and (min-width: 2381px) {
+  .crue-title {
+    font-size: 7vw;
+  }
+}
+
+@media screen and (min-width: 2720px) {
+  .crue-title {
+    font-size: 6vw;
   }
 }
 

@@ -29,7 +29,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="dist/css/styles_version2.3.css"
+      href="dist/css/styles_version2.4.css"
     />
   </head>
 
@@ -42,19 +42,49 @@
             href="index.html"
             role="menu-image"
             target="_self"
+            aria-label="Logo home page button"
+            aria-roledescription="This serves as a logo for the page, sitting in the navbar, so it also acts as a navigation button for the home page"
           >
             <img
               src="./img/crue_logo_new.svg"
               alt="crue logo"
               height="48"
               width=""
+              aria-label="Crue's Logo"
             />
           </a>
-          <a href="about.html" role="menuitem" target="_self">About Crue</a>
-          <a href="work.html" role="menuitem" target="_self">Crue's Projects</a>
-          <a href="contact.html" role="menuitem" target="_self">Contact Crue</a>
-          <a href="work.html" role="menuitem" target="_self" class="active"
-            >Back to Projects
+          <a
+            href="contact.html"
+            role="menuitem"
+            target="_self"
+            aria-label="Contact me page button"
+            aria-roledescription="Navigation button for the contact me page."
+            >Contact Me</a
+          >
+          <a
+            href="work.html"
+            role="menuitem"
+            target="_self"
+            aria-label="My Projects Page"
+            aria-roledescription="Navigation button for the my projects page"
+            >My Projects</a
+          >
+          <a
+            href="about.html"
+            role="menuitem"
+            target="_self"
+            class="active"
+            aria-label="About Me Page"
+            aria-roledescription="Navigation button for the about me page."
+            >About Me
+          </a>
+          <a
+            href="index.html"
+            role="menuitem"
+            target="_self"
+            aria-label="Home Page"
+            aria-roledescription="Navigation button for returning to the home page"
+            >Home
           </a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>

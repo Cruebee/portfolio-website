@@ -30,7 +30,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="dist/css/styles_version2.3.css"
+      href="dist/css/styles_version2.4.css"
     />
   </head>
 
@@ -43,17 +43,50 @@
             href="index.html"
             role="menu-image"
             target="_self"
+            aria-label="Logo home page button"
+            aria-roledescription="This serves as a logo for the page, sitting in the navbar, so it also acts as a navigation button for the home page"
           >
             <img
               src="./img/crue_logo_new.svg"
               alt="crue logo"
               height="48"
               width=""
+              aria-label="Crue's Logo"
             />
           </a>
-          <a href="contact.html" role="menuitem" target="_self">Contact Me</a>
-          <a href="work.html" role="menuitem" target="_self">My Projects</a>
-          <a href="about.html" role="menuitem" target="_self">About Me</a>
+          <a
+            href="contact.html"
+            role="menuitem"
+            target="_self"
+            aria-label="Contact me page button"
+            aria-roledescription="Navigation button for the contact me page."
+            >Contact Me</a
+          >
+          <a
+            href="work.html"
+            role="menuitem"
+            target="_self"
+            aria-label="My Projects Page"
+            aria-roledescription="Navigation button for the my projects page"
+            >My Projects</a
+          >
+          <a
+            href="about.html"
+            role="menuitem"
+            target="_self"
+            class="active"
+            aria-label="About Me Page"
+            aria-roledescription="Navigation button for the about me page."
+            >About Me
+          </a>
+          <a
+            href="index.html"
+            role="menuitem"
+            target="_self"
+            aria-label="Home Page"
+            aria-roledescription="Navigation button for returning to the home page"
+            >Home
+          </a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -98,9 +131,7 @@
 
         <div class="grid-1">
           <div class="grid-1__item">
-            <h2 class="project-title-left">
-              The Challenge
-            </h2>
+            <h2 class="project-title-left">The Challenge</h2>
             <p class="proj-desc-left">
               Meet-Em-Up was designed to bring people together in an
               ever-changing world. Today, with the introduction of the novel
@@ -115,7 +146,7 @@
           </div>
           <div class="grid-1_img__item">
             <img
-              style="width: 100%;"
+              style="width: 100%"
               src="img/meet2.jpeg"
               alt="Meet-Em-Up Searching"
             />
@@ -125,15 +156,13 @@
         <div class="grid-2">
           <div class="grid-2_img__item">
             <img
-              style="width: 100%;"
+              style="width: 100%"
               src="img/meet3.jpeg"
               alt="meet-em-up img"
             />
           </div>
           <div class="grid-2__item">
-            <h2 class="project-title-left">
-              Tech Stack Explanation
-            </h2>
+            <h2 class="project-title-left">Tech Stack Explanation</h2>
             <p class="proj-desc-left">
               For this progressive web app, React made choosing a set of build
               tools simple. Its reusable components and the use of Meetup's API
@@ -150,9 +179,7 @@
 
         <div class="grid-1">
           <div class="grid-1__item">
-            <h2 class="project-title-left">
-              The Process
-            </h2>
+            <h2 class="project-title-left">The Process</h2>
             <p class="proj-desc-left">
               As with most projects, the process started with user stories,
               which were used to flesh out what users might want out of an
@@ -167,7 +194,7 @@
           </div>
           <div class="grid-1_img__item">
             <img
-              style="width: 100%;"
+              style="width: 100%"
               src="img/meetup-comp.png"
               alt="Meet-Em-Up user stories"
             />
@@ -177,7 +204,7 @@
         <div class="single-grid">
           <div class="single-grid__img">
             <img
-              style="width: 100%; margin-top: 0.5rem;"
+              style="width: 100%; margin-top: 0.5rem"
               src="img/meet-group.png"
             />
           </div>
@@ -186,15 +213,13 @@
         <div class="grid-2">
           <div class="grid-2_img__item">
             <img
-              style="width: 100%;"
+              style="width: 100%"
               src="img/meet4.jpeg"
               alt="meet-em-up img"
             />
           </div>
           <div class="grid-2__item">
-            <h2 class="project-title-left">
-              Lessons Learned
-            </h2>
+            <h2 class="project-title-left">Lessons Learned</h2>
             <p class="proj-desc-left">
               I learned so much from this project in terms of coding best
               practices and the importance of testing. As this project was

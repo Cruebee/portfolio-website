@@ -29,7 +29,7 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="dist/css/styles_version2.3.css"
+      href="dist/css/styles_version2.4.css"
     />
   </head>
 
@@ -42,17 +42,50 @@
             href="index.html"
             role="menu-image"
             target="_self"
+            aria-label="Logo home page button"
+            aria-roledescription="This serves as a logo for the page, sitting in the navbar, so it also acts as a navigation button for the home page"
           >
             <img
               src="./img/crue_logo_new.svg"
               alt="crue logo"
               height="48"
               width=""
+              aria-label="Crue's Logo"
             />
           </a>
-          <a href="contact.html" role="menuitem" target="_self">Contact Me</a>
-          <a href="work.html" role="menuitem" target="_self">My Projects</a>
-          <a href="about.html" role="menuitem" target="_self">About Me</a>
+          <a
+            href="contact.html"
+            role="menuitem"
+            target="_self"
+            aria-label="Contact me page button"
+            aria-roledescription="Navigation button for the contact me page."
+            >Contact Me</a
+          >
+          <a
+            href="work.html"
+            role="menuitem"
+            target="_self"
+            aria-label="My Projects Page"
+            aria-roledescription="Navigation button for the my projects page"
+            >My Projects</a
+          >
+          <a
+            href="about.html"
+            role="menuitem"
+            target="_self"
+            class="active"
+            aria-label="About Me Page"
+            aria-roledescription="Navigation button for the about me page."
+            >About Me
+          </a>
+          <a
+            href="index.html"
+            role="menuitem"
+            target="_self"
+            aria-label="Home Page"
+            aria-roledescription="Navigation button for returning to the home page"
+            >Home
+          </a>
           <a href="javascript:void(0);" class="icon" onclick="myFunction()">
             <i class="fa fa-bars"></i>
           </a>
@@ -94,9 +127,7 @@
 
         <div class="grid-1">
           <div class="grid-1__item">
-            <h2 class="project-title-left">
-              The Challenge
-            </h2>
+            <h2 class="project-title-left">The Challenge</h2>
             <p class="proj-desc-left">
               Poke-Dex was a learning project designed to explore the ins and
               outs of JavaScript and DOM interaction. The project also served as
@@ -107,22 +138,20 @@
             </p>
           </div>
           <div class="grid-1_img__item">
-            <img style="width: 100%;" src="img/poke-main.jpeg" alt="poke-dex" />
+            <img style="width: 100%" src="img/poke-main.jpeg" alt="poke-dex" />
           </div>
         </div>
 
         <div class="grid-2">
           <div class="grid-2_img__item">
             <img
-              style="width: 100%;"
+              style="width: 100%"
               src="img/poke-modal.jpeg"
               alt="poke-dex modal img"
             />
           </div>
           <div class="grid-2__item">
-            <h2 class="project-title-left">
-              Tech Stack Explanation
-            </h2>
+            <h2 class="project-title-left">Tech Stack Explanation</h2>
             <p class="proj-desc-left">
               HTML, CSS, JavaScript, along with jQuery and other third-party
               libraries are the backbone and foundation of most modern web
@@ -137,9 +166,7 @@
 
         <div class="grid-1">
           <div class="grid-1__item">
-            <h2 class="project-title-left">
-              The Process
-            </h2>
+            <h2 class="project-title-left">The Process</h2>
             <p class="proj-desc-left">
               The Poke-Dex app was first visualized through user stories. The
               user stories get converted into sketched wireframes, which
@@ -151,7 +178,7 @@
           </div>
           <div class="grid-1_img__item">
             <img
-              style="width: 100%; max-height: 400px;"
+              style="width: 100%; max-height: 400px"
               src="img/pokedex-wire.png"
               alt="poke-wireframes"
             />
@@ -161,7 +188,7 @@
         <div class="single-grid">
           <div class="single-grid__img">
             <img
-              style="width: 75%; margin-top: 0.5rem;"
+              style="width: 75%; margin-top: 0.5rem"
               src="img/poke-comp.png"
             />
           </div>
@@ -170,15 +197,13 @@
         <div class="grid-2">
           <div class="grid-2_img__item">
             <img
-              style="width: 100%;"
+              style="width: 100%"
               src="img/poke-footer.jpeg"
               alt="poke-dex footer img"
             />
           </div>
           <div class="grid-2__item">
-            <h2 class="project-title-left">
-              Lessons Learned
-            </h2>
+            <h2 class="project-title-left">Lessons Learned</h2>
             <p class="proj-desc-left">
               This project taught me a lot about patience and API interaction.
               Before I began this task, I only had a tenuous grasp of HTML, CSS,
